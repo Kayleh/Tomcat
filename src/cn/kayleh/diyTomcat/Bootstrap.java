@@ -49,7 +49,7 @@ public class Bootstrap {
                 //准备发送给给客户端的数据。
                 String response_head = "HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n";
                 String responseString = "Hello DIY Tomcat from kayleh.cn";
-                responseString = response_head + requestString;
+                responseString = response_head + responseString;
 
                 //把字符串转换成字节数组发送出去
                 outputStream.write(responseString.getBytes());
