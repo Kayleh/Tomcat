@@ -1,6 +1,7 @@
 package cn.kayleh.diyTomcat;
 
 import cn.hutool.core.util.NetUtil;
+import cn.kayleh.http.Request;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,17 +32,10 @@ public class Bootstrap {
                 //表示收到一个浏览器客户端的请求
                 Socket accept = serverSocket.accept();
 
-                //打开输入流，准备接受浏览器提交的信息
-                InputStream inputStream = accept.getInputStream();
+                Request request = new Request(accept);
 
-                //准备一个长度是 1024 的字节数组，把浏览器的信息读取出来放进去
-                int bufferSize = 1024;
-                byte[] buffer = new byte[bufferSize];
-                inputStream.read(buffer);
-
-                //把字节数组转换成字符串，并且打印出来
-                String requestString = new String(buffer, "utf-8");
-                System.out.println("浏览器的输入信息： \r\n" + requestString);
+                System.out.println("浏览器的输入信息： \r\n" + request.getRequestString());
+                System.out.println("URI：" + request.getUri());
 
                 //打开输出流，准备给客户端输出信息
                 OutputStream outputStream = accept.getOutputStream();
