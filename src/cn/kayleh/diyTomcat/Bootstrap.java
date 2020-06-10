@@ -1,7 +1,11 @@
 package cn.kayleh.diyTomcat;
 
+import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NetUtil;
+import cn.hutool.core.util.StrUtil;
+import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.http.Request;
+import cn.kayleh.http.Response;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,23 +41,45 @@ public class Bootstrap {
                 System.out.println("浏览器的输入信息： \r\n" + request.getRequestString());
                 System.out.println("URI：" + request.getUri());
 
-                //打开输出流，准备给客户端输出信息
-                OutputStream outputStream = accept.getOutputStream();
+                Response response = new Response();
+                String html = "Hello DIY Tomcat from kayleh.cn";
+                response.getWriter().println(html);
 
-                //准备发送给给客户端的数据。
-                String response_head = "HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n";
-                String responseString = "Hello DIY Tomcat from kayleh.cn";
-                responseString = response_head + responseString;
-
-                //把字符串转换成字节数组发送出去
-                outputStream.write(responseString.getBytes());
-                outputStream.flush();
-
-                //关闭客户端对应的 socket
-                accept.close();
+                handle200(accept, response);
+//                //打开输出流，准备给客户端输出信息
+//                OutputStream outputStream = accept.getOutputStream();
+//
+//                //准备发送给给客户端的数据。
+//                String response_head = "HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n";
+//                String responseString = "Hello DIY Tomcat from kayleh.cn";
+//                responseString = response_head + responseString;
+//
+//                //把字符串转换成字节数组发送出去
+//                outputStream.write(responseString.getBytes());
+//                outputStream.flush();
+//
+//                //关闭客户端对应的 socket
+//                accept.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void handle200(Socket socket, Response response) throws IOException {
+        String contentType = response.getContentType();
+        String headText = Constant.response_head_202;
+        headText = StrUtil.format(headText, contentType);
+
+        byte[] head = headText.getBytes();
+        byte[] body = response.getBody();
+        byte[] responseBytes = new byte[head.length + body.length];
+        ArrayUtil.copy(head, 0, responseBytes, 0, head.length);
+        ArrayUtil.copy(body, 0, responseBytes, head.length, body.length);
+
+        OutputStream outputStream = socket.getOutputStream();
+        outputStream.write(responseBytes);
+        socket.close();
+
     }
 }
