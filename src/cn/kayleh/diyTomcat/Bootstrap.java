@@ -1,5 +1,6 @@
 package cn.kayleh.diyTomcat;
 
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
@@ -7,11 +8,10 @@ import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Objects;
 
 /**
  * @Author: Wizard
@@ -42,8 +42,30 @@ public class Bootstrap {
                 System.out.println("URI：" + request.getUri());
 
                 Response response = new Response();
-                String html = "Hello DIY Tomcat from kayleh.cn";
-                response.getWriter().println(html);
+
+                String uri = request.getUri();
+
+                // 首先判断 uri 是否为空，如果为空就不处理了。 什么情况为空呢？ 在 TestTomcat 里的 NetUtil.isUsableLocalPort(port) 这段代码就会导致为空。
+                if (null == uri) continue;
+                System.out.println(uri);
+                // 如果是 "/", 那么依然返回原字符串。
+                if ("/".equals(uri)) {
+                    String html = "Hello DIY Tomcat from kayleh.cn";
+                    response.getWriter().println(html);
+                } else {
+                    //如果访问的是a.html ，
+                    // URI地址为/a.html ,
+                    // fileName为 a.html
+                    String fileName = StrUtil.removePrefix(uri, "/");
+                    File file = FileUtil.file(Constant.rootFolder, fileName);
+                    if (file.exists()) {
+                        //如果文件存在
+                        String fileContent = FileUtil.readUtf8String(file);
+                        response.getWriter().println(fileContent);
+                    } else {
+                        response.getWriter().println("File Not Found");
+                    }
+                }
 
                 handle200(accept, response);
 //                //打开输出流，准备给客户端输出信息

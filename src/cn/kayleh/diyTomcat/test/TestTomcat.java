@@ -29,12 +29,6 @@ public class TestTomcat {
         }
     }
 
-    //准备一个工具方法，用来获取网页返回。
-    public String getContentString(String uri) {
-        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
-        String content = MiniBrowser.getContentString(url);
-        return content;
-    }
 
     //测试方法，用于访问： http://127.0.0.1:18080/, 并验证返回值是否是 “Hello DIY Tomcat from how2j.cn”，如果不是就会测试失败。
     @Test
@@ -42,5 +36,27 @@ public class TestTomcat {
         String html = getContentString("/");
         Assert.assertEquals(html, "Hello DIY Tomcat from kayleh.cn");
     }
+
+
+    @Test
+    public void  testaHtml(){
+        String html = getContentString("/a.html");
+        Assert.assertEquals(html,"Hello DIY Tomcat from a.html");
+    }
+
+
+
+
+
+
+
+
+    //准备一个工具方法，用来获取网页返回。
+    public String getContentString(String uri) {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        String content = MiniBrowser.getContentString(url);
+        return content;
+    }
+
 
 }
