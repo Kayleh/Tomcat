@@ -1,6 +1,7 @@
 package cn.kayleh.diyTomcat;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
@@ -68,6 +69,14 @@ public class Bootstrap {
                         //如果文件存在
                         String fileContent = FileUtil.readUtf8String(file);
                         response.getWriter().println(fileContent);
+
+                        //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
+                        // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
+                        if(fileName.equals("timeConsume.html")){
+                            ThreadUtil.sleep(1000);
+                        }
+
+
                     } else {
                         response.getWriter().println("File Not Found");
                     }
@@ -113,7 +122,7 @@ public class Bootstrap {
 
         Set<String> keys = infos.keySet();
         for (String key : keys) {
-            LogFactory.get().info(key+":\t\t"+infos.get(key));
+            LogFactory.get().info(key + ":\t\t" + infos.get(key));
         }
     }
 
