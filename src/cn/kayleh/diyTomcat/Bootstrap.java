@@ -7,26 +7,30 @@ import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
+import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.util.Constant;
+import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @Author: Wizard
  * @Date: 2020/6/7 20:41
  */
 public class Bootstrap {
+    //声明一个 contextMap 用于存放路径和Context 的映射。
+    public static Map<String, Context> contextMap = new HashMap<>();
     public static void main(String[] args) {
         try {
             logJVM();
+
+            scanContextOnWebAppsFolder();
+
             //本服务器使用的端口号是8888
             int port = 8888;
 //            if (!NetUtil.isUsableLocalPort(port)) {
@@ -43,65 +47,81 @@ public class Bootstrap {
                 //表示收到一个浏览器客户端的请求
                 Socket accept = serverSocket.accept();
 
-                Request request = new Request(accept);
+                Runnable runnable = new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Request request = new Request(accept);
+                            Response response = new Response();
+                            String uri = request.getUri();
+                            if (null == uri) return;
+                            System.out.println(uri);
 
-                System.out.println("浏览器的输入信息： \r\n" + request.getRequestString());
-                System.out.println("URI：" + request.getUri());
+                            Context context = request.getContext();
 
-                Response response = new Response();
+                            if ("/".equals(uri)) {
+                                String html = "Hello DIY Tomcat from kayleh.cn";
+                                response.getWriter().println(html);
+                            } else {
+                                //如果访问的是a.html ，
+                                // URI地址为/a.html ,
+                                // fileName为 a.html
+                                String fileName = StrUtil.removePrefix(uri, "/");
+                                File file = FileUtil.file(context.getDocBase(), fileName);
+                                if (file.exists()) {
+                                    //如果文件存在
+                                    String fileContent = FileUtil.readUtf8String(file);
+                                    response.getWriter().println(fileContent);
 
-                String uri = request.getUri();
-
-                // 首先判断 uri 是否为空，如果为空就不处理了。 什么情况为空呢？ 在 TestTomcat 里的 NetUtil.isUsableLocalPort(port) 这段代码就会导致为空。
-                if (null == uri) continue;
-                System.out.println(uri);
-                // 如果是 "/", 那么依然返回原字符串。
-                if ("/".equals(uri)) {
-                    String html = "Hello DIY Tomcat from kayleh.cn";
-                    response.getWriter().println(html);
-                } else {
-                    //如果访问的是a.html ，
-                    // URI地址为/a.html ,
-                    // fileName为 a.html
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(Constant.rootFolder, fileName);
-                    if (file.exists()) {
-                        //如果文件存在
-                        String fileContent = FileUtil.readUtf8String(file);
-                        response.getWriter().println(fileContent);
-
-                        //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
-                        // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
-                        if(fileName.equals("timeConsume.html")){
-                            ThreadUtil.sleep(1000);
+                                    //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
+                                    // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
+                                    if (fileName.equals("timeConsume.html")) {
+                                        ThreadUtil.sleep(1000);
+                                    }
+                                } else {
+                                    response.getWriter().println("File Not Found");
+                                }
+                            }
+                            handle200(accept, response);
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
-
-
-                    } else {
-                        response.getWriter().println("File Not Found");
                     }
-                }
-
-                handle200(accept, response);
-//                //打开输出流，准备给客户端输出信息
-//                OutputStream outputStream = accept.getOutputStream();
-//
-//                //准备发送给给客户端的数据。
-//                String response_head = "HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n";
-//                String responseString = "Hello DIY Tomcat from kayleh.cn";
-//                responseString = response_head + responseString;
-//
-//                //把字符串转换成字节数组发送出去
-//                outputStream.write(responseString.getBytes());
-//                outputStream.flush();
-//
-//                //关闭客户端对应的 socket
-//                accept.close();
+                };
+                ThreadPoolUtil.run(runnable);
             }
         } catch (IOException e) {
+            LogFactory.get().error(e);
             e.printStackTrace();
         }
     }
+
+    //创建 scanContextsOnWebAppsFolder 方法，用于扫描 webapps 文件夹下的目录，对这些目录调用 loadContext 进行加载。
+    private static void scanContextOnWebAppsFolder() {
+        //列出webapps下的每一个文件夹
+        File[] folders = Constant.webappsFolder.listFiles();
+        for (File folder : folders) {
+            if (!folder.isDirectory()) continue;
+            loadContent(folder);
+        }
+    }
+
+    //加载这个目录成为 Context 对象。
+    //如果是 ROOT，那么path 就是 "/", 如果是 a, 那么path 就是 "/a", 然后根据 path 和 它们所处于的路径创建 Context 对象。
+    //然后把这些对象保存进 contextMap，方便后续使用。
+    private static void loadContent(File folder) {
+        String path = folder.getName();
+        if ("ROOT".equals(path))
+            path="/";
+        else path = "/"+path;
+
+        String docBase = folder.getAbsolutePath();
+        Context context = new Context(path,docBase);
+
+        contextMap.put(context.getPath(), context);
+
+    }
+
 
     //像 tomcat 那样 一开始打印 jvm 信息
     private static void logJVM() {

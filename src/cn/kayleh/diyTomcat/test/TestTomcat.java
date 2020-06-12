@@ -83,9 +83,20 @@ public class TestTomcat {
 
         //获取经过了多长时间的毫秒数，并且断言它是超过3秒的。
         long duration = timeInterval.intervalMs();
-        Assert.assertTrue(duration > 3000);
+        Assert.assertTrue(duration < 3000);
 
     }
+
+    @Test
+    public void testaIndex(){
+        String html = getContentString("/a/index.html");
+        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@a");
+    }
+
+
+
+
+
 
 
     //准备一个工具方法，用来获取网页返回。
