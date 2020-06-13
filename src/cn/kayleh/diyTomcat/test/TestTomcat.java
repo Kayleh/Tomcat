@@ -88,10 +88,20 @@ public class TestTomcat {
     }
 
     @Test
-    public void testaIndex(){
+    public void testaIndex() {
         String html = getContentString("/a/index.html");
         Assert.assertEquals(html, "Hello DIY Tomcat from index.html@a");
     }
+
+    @Test
+    public void testbIndex() {
+        String html = getContentString("/b/index.html");
+        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@b");
+    }
+
+
+
+
 
 
 

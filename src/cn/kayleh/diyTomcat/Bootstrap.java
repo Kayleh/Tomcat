@@ -9,6 +9,7 @@ import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.util.Constant;
+import cn.kayleh.diyTomcat.util.ServerXMLUtil;
 import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
@@ -25,11 +26,13 @@ import java.util.*;
 public class Bootstrap {
     //声明一个 contextMap 用于存放路径和Context 的映射。
     public static Map<String, Context> contextMap = new HashMap<>();
+
     public static void main(String[] args) {
         try {
             logJVM();
 
             scanContextOnWebAppsFolder();
+            scanContextsInServerXml();
 
             //本服务器使用的端口号是8888
             int port = 8888;
@@ -96,12 +99,22 @@ public class Bootstrap {
         }
     }
 
+    //创建scanContextsInServerXML， 通过 ServerXMLUtil 获取 context, 放进 contextMap里。
+    private static void scanContextsInServerXml() {
+        List<Context> contexts = ServerXMLUtil.getContexts();
+        for (Context context : contexts) {
+            contextMap.put(context.getPath(), context);
+        }
+    }
+
+
     //创建 scanContextsOnWebAppsFolder 方法，用于扫描 webapps 文件夹下的目录，对这些目录调用 loadContext 进行加载。
     private static void scanContextOnWebAppsFolder() {
         //列出webapps下的每一个文件夹
         File[] folders = Constant.webappsFolder.listFiles();
         for (File folder : folders) {
-            if (!folder.isDirectory()) continue;
+            if (!folder.isDirectory())
+                continue;
             loadContent(folder);
         }
     }
@@ -112,11 +125,11 @@ public class Bootstrap {
     private static void loadContent(File folder) {
         String path = folder.getName();
         if ("ROOT".equals(path))
-            path="/";
-        else path = "/"+path;
+            path = "/";
+        else path = "/" + path;
 
         String docBase = folder.getAbsolutePath();
-        Context context = new Context(path,docBase);
+        Context context = new Context(path, docBase);
 
         contextMap.put(context.getPath(), context);
 
