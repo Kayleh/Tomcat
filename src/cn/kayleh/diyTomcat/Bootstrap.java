@@ -8,6 +8,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
+import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Host;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ServerXMLUtil;
@@ -32,7 +33,7 @@ public class Bootstrap {
         try {
             logJVM();
 
-            Host host = new Host();
+            Engine engine = new Engine();
 
             scanContextOnWebAppsFolder();
             scanContextsInServerXml();
@@ -57,7 +58,7 @@ public class Bootstrap {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(accept,host);
+                            Request request = new Request(accept, engine);
                             Response response = new Response();
                             String uri = request.getUri();
                             if (null == uri) return;
