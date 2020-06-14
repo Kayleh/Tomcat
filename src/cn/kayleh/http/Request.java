@@ -8,6 +8,7 @@ package cn.kayleh.http;
 import cn.hutool.core.util.StrUtil;
 import cn.kayleh.diyTomcat.Bootstrap;
 import cn.kayleh.diyTomcat.catalina.Context;
+import cn.kayleh.diyTomcat.catalina.Host;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 
 import java.io.IOException;
@@ -21,9 +22,11 @@ public class Request {
     private Socket socket;
 
     private Context context;
+    private Host host;
 
-    public Request(Socket socket) throws IOException {
+    public Request(Socket socket, Host host) throws IOException {
         this.socket = socket;
+        this.host = host;
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
             return;
@@ -44,9 +47,12 @@ public class Request {
             path = "/";
         else
             path = "/" + path;
-        context = Bootstrap.contextMap.get(path);
+//        context = Bootstrap.contextMap.get(path);
+        //解析 Context 的时候通过 host 获取
+        context = host.getContext(path);
         if (null == context)
-            context = Bootstrap.contextMap.get("/");
+//            context = Bootstrap.contextMap.get("/");
+            context = host.getContext("/");
 
     }
 

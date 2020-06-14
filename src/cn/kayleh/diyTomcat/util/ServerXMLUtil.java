@@ -34,4 +34,13 @@ public class ServerXMLUtil {
         }
         return result;
     }
+
+    //解析 host 元素下的 name 属性。
+    public static String getHostName() {
+        String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
+        Document document = Jsoup.parse(xml);
+
+        Elements host = document.select("Host");
+        return host.attr("name");
+    }
 }
