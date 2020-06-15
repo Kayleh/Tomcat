@@ -14,8 +14,8 @@ import java.util.Map;
  */
 public class Host {
     //name 表示名称。
-    //contextMap 其实就是本来在 bootstrap 里的 contextMap , 只不过挪到这里来了。
     private String name;
+    ////声明一个 contextMap 用于存放路径和Context 的映射。
     private Map<String, Context> contextMap;
     private Engine engine;
 
@@ -29,6 +29,7 @@ public class Host {
 
     }
 
+    //创建scanContextsInServerXML， 通过 ServerXMLUtil 获取 context, 放进 contextMap里。
     private void scanContextsInServerXML() {
         List<Context> contexts = ServerXMLUtil.getContexts();
         for (Context context : contexts) {
@@ -36,8 +37,9 @@ public class Host {
         }
     }
 
+    //创建 scanContextsOnWebAppsFolder 方法，用于扫描 webapps 文件夹下的目录，对这些目录调用 loadContext 进行加载。
     private void scanContextsOnWebAppsFolder() {
-
+        //列出webapps下的每一个文件夹
         File[] folders = Constant.webappsFolder.listFiles();
         for (File folder : folders) {
             if (!folder.isDirectory()) continue;
@@ -55,6 +57,9 @@ public class Host {
     }
 
 
+    //加载这个目录成为 Context 对象。
+    //如果是 ROOT，那么path 就是 "/", 如果是 a, 那么path 就是 "/a", 然后根据 path 和 它们所处于的路径创建 Context 对象。
+    //然后把这些对象保存进 contextMap，方便后续使用。
     private void loadContext(File folder) {
         String path = folder.getName();
         if ("ROOT".equals(path)) {
