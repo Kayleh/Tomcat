@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Server>
-    <Engine defaultHost="localhost">
-        <Host name="localhost">
-            <!-- Host 的意思是虚拟主机。 通常都是 localhost, 即表示本机。-->
-            <Context path="/b" docBase="d:/project/diyTomcat/b"/>
-        </Host>
-    </Engine>
+    <!--Service 是 Engine 的父节点，用于代表 tomcat 提供的服务。它里面会有很多Connector对象-->
+    <Service name="Catalina">
+        <Engine defaultHost="localhost">
+            <Host name="localhost">
+                <!-- Host 的意思是虚拟主机。 通常都是 localhost, 即表示本机。-->
+                <Context path="/b" docBase="d:/project/diyTomcat/b"/>
+            </Host>
+        </Engine>
+    </Service>
 </Server>

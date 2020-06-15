@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Author: Wizard
  * @Date: 2020/6/14 15:41
- *
+ * <p>
  * Engine 表示Servlet引擎，用来处理Servlet的请求
  */
 public class Engine {
@@ -16,7 +16,10 @@ public class Engine {
     //Host 集合
     private List<Host> hosts;
 
-    public Engine() {
+    private Service service;
+
+    public Engine(Service service) {
+        this.service = service;
         this.defaultHost = ServerXMLUtil.getEngineDefaultHost();
         this.hosts = ServerXMLUtil.getHosts(this);
         checkDefault();
@@ -24,7 +27,7 @@ public class Engine {
 
     //判断默认的是否存在，否则就会抛出异常
     private void checkDefault() {
-        if (null==getDefaultHost())
+        if (null == getDefaultHost())
             throw new RuntimeException("the defaultHost" + defaultHost + " does not exist!");
     }
 

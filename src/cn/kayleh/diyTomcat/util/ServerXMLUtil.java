@@ -37,13 +37,12 @@ public class ServerXMLUtil {
         return result;
     }
 
-    //解析 host 元素下的 name 属性。
-    public static String getHostName() {
+    public static String getServiceName() {
         String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
         Document document = Jsoup.parse(xml);
 
-        Elements host = document.select("Host");
-        return host.attr("name");
+        Element service = document.select("Service").first();
+        return service.attr("name");
     }
 
     //获取Engine下的defaultHost的值

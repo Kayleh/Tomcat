@@ -10,6 +10,7 @@ import cn.hutool.system.SystemUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Host;
+import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ServerXMLUtil;
 import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
@@ -29,11 +30,12 @@ public class Bootstrap {
     //声明一个 contextMap 用于存放路径和Context 的映射。
     public static Map<String, Context> contextMap = new HashMap<>();
 
+
     public static void main(String[] args) {
         try {
             logJVM();
 
-            Engine engine = new Engine();
+            Service service = new Service();
 
             scanContextOnWebAppsFolder();
             scanContextsInServerXml();
@@ -58,7 +60,7 @@ public class Bootstrap {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(accept, engine);
+                            Request request = new Request(accept, service.getEngine());
                             Response response = new Response();
                             String uri = request.getUri();
                             if (null == uri) return;

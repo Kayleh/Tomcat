@@ -10,6 +10,7 @@ import cn.kayleh.diyTomcat.Bootstrap;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Host;
+import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 
 import java.io.IOException;
@@ -24,6 +25,7 @@ public class Request {
 
     private Context context;
     private Engine engine;
+    private Service service;
 
     public Request(Socket socket, Engine engine) throws IOException {
         this.socket = socket;
@@ -49,10 +51,10 @@ public class Request {
         else
             path = "/" + path;
 
-        context = engine.getDefaultHost().getContext(path);
+        context = service.getEngine().getDefaultHost().getContext(path);
 
         if (null == context)
-            context = engine.getDefaultHost().getContext("/");
+            context = service.getEngine().getDefaultHost().getContext("/");
 
     }
 
