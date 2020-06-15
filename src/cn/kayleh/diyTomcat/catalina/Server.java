@@ -52,7 +52,7 @@ public class Server {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(accept, service.getEngine());
+                            Request request = new Request(accept, service);
                             Response response = new Response();
                             String uri = request.getUri();
                             if (null == uri) {
@@ -79,15 +79,22 @@ public class Server {
                                         ThreadUtil.sleep(1000);
                                     }
                                 } else {
-                                    response.getWriter().println("File Not Found");
+                                    handle404(accept, uri);
+                                    return;
                                 }
                             }
                             handle200(accept, response);
                         } catch (IOException e) {
                             e.printStackTrace();
+                        } finally {
+                            try {
+                                if (!accept.isClosed())
+                                    accept.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
-
                 };
                 ThreadPoolUtil.run(runnable);
             }
@@ -133,6 +140,15 @@ public class Server {
         ArrayUtil.copy(body, 0, responseBytes, head.length, body.length);
         OutputStream os = accept.getOutputStream();
         os.write(responseBytes);
-        accept.close();
+//        accept.close();
+    }
+
+    protected void handle404(Socket socket, String uri) throws IOException {
+        OutputStream outputStream = socket.getOutputStream();
+        String responseText = StrUtil.format(Constant.textFormat_404, uri, uri);
+        //响应文本 = 响应头+响应体
+        responseText = Constant.response_head_404 + responseText;
+        byte[] responseByte = responseText.getBytes("utf-8");
+        outputStream.write(responseByte);
     }
 }

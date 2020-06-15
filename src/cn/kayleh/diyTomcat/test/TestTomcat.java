@@ -98,16 +98,31 @@ public class TestTomcat {
         String html = getContentString("/b/index.html");
         Assert.assertEquals(html, "Hello DIY Tomcat from index.html@b");
     }
+    @Test
+    public void test404() {
+        //访问某个不存在的 html , 然后断言 返回的 http 响应里包含 HTTP/1.1 404 Not Found,
+        // 毕竟返回的整个 http 响应那么长，不好用 equals 来比较，只要包含关键的头信息，就算测试通过啦
+        String response  = getHttpString("/not_exist.html");
+        containAssert(response, "HTTP/1.1 404 Not Found");
+    }
 
 
 
 
 
 
+    //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
+    private void containAssert(String html, String string) {
+        boolean match = StrUtil.containsAny(html, string);
+        Assert.assertTrue(match);
+    }
 
-
-
-
+    //增加一个 getHttpString 方法来获取 Http 响应
+    public String getHttpString(String uri){
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        String http = MiniBrowser.getHttpString(url);
+        return http;
+    }
 
     //准备一个工具方法，用来获取网页返回。
     public String getContentString(String uri) {

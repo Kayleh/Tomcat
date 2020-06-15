@@ -24,12 +24,11 @@ public class Request {
     private Socket socket;
 
     private Context context;
-    private Engine engine;
     private Service service;
 
-    public Request(Socket socket, Engine engine) throws IOException {
+    public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
-        this.engine = engine;
+        this.service = service;
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
             return;
@@ -48,13 +47,14 @@ public class Request {
         String path = StrUtil.subBetween(uri, "/", "/");
         if (null == path)
             path = "/";
-        else
+        else {
             path = "/" + path;
+        }
 
-        context = service.getEngine().getDefaultHost().getContext(path);
-
+        Engine engine = service.getEngine();
+        context = engine.getDefaultHost().getContext(path);
         if (null == context)
-            context = service.getEngine().getDefaultHost().getContext("/");
+            context = engine.getDefaultHost().getContext("/");
 
     }
 

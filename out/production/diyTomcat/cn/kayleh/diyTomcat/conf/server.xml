@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Server>
-    <Engine defaultHost="localhost">
-        <Host name="localhost">
-            <!-- Host 的意思是虚拟主机。 通常都是 localhost, 即表示本机。-->
-            <Context path="/b" docBase="d:/project/diyTomcat/b"/>
-        </Host>
-    </Engine>
-</Server>

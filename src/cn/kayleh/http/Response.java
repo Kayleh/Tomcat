@@ -33,7 +33,8 @@ public class Response {
     public PrintWriter getWriter() {
         return writer;
     }
-    public byte[] getBody() throws UnsupportedEncodingException{
+
+    public byte[] getBody() {
         String content = stringWriter.toString();
         byte[] body = content.getBytes();
         return body;
