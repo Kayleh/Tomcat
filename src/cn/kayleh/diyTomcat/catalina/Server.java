@@ -8,6 +8,7 @@ import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
+import cn.kayleh.diyTomcat.util.WebXMLUtil;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
@@ -61,33 +62,32 @@ public class Server {
                             System.out.println("uri:" + uri);
                             Context context = request.getContext();
 
-                            if("/500.html".equals(uri)){
+                            if ("/500.html".equals(uri)) {
                                 throw new Exception("this is a deliberately created exception");
                             }
 
-                            if ("/".equals(uri)) {
-                                String html = "Hello DIY Tomcat from Kayleh.cn";
-                                response.getWriter().println(html);
-                            } else {
-                                //如果访问的是a.html ，
-                                // URI地址为/a.html ,
-                                // fileName为 a.html
-                                String fileName = StrUtil.removePrefix(uri, "/");
-                                File file = FileUtil.file(context.getDocBase(), fileName);
-                                if (file.exists()) {
-                                    //如果文件存在
-                                    String fileContent = FileUtil.readUtf8String(file);
-                                    response.getWriter().println(fileContent);
-                                    //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
-                                    // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
-                                    if (fileName.equals("TimeConsume.html")) {
-                                        ThreadUtil.sleep(1000);
-                                    }
-                                } else {
-                                    handle404(accept, uri);
-                                    return;
+                            if ("/".equals(uri))
+                                uri = WebXMLUtil.getWelcomeFile(request.getContext());
+
+                            //如果访问的是a.html ，
+                            // URI地址为/a.html ,
+                            // fileName为 a.html
+                            String fileName = StrUtil.removePrefix(uri, "/");
+                            File file = FileUtil.file(context.getDocBase(), fileName);
+                            if (file.exists()) {
+                                //如果文件存在
+                                String fileContent = FileUtil.readUtf8String(file);
+                                response.getWriter().println(fileContent);
+                                //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
+                                // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
+                                if (fileName.equals("TimeConsume.html")) {
+                                    ThreadUtil.sleep(1000);
                                 }
+                            } else {
+                                handle404(accept, uri);
+                                return;
                             }
+
                             handle200(accept, response);
                         } catch (Exception e) {
                             LogFactory.get().error(e);

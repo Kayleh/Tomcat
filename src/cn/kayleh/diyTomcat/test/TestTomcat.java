@@ -87,17 +87,29 @@ public class TestTomcat {
 
     }
 
-    @Test
-    public void testaIndex() {
-        String html = getContentString("/a/index.html");
-        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@a");
-    }
+//    @Test
+//    public void testaIndex() {
+//        String html = getContentString("/a.html");
+//        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@a");
+//    }
+//
+//    @Test
+//    public void testbIndex() {
+//        String html = getContentString("/b/index.html");
+//        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@b");
+//    }
 
     @Test
-    public void testbIndex() {
-        String html = getContentString("/b/index.html");
-        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@b");
+    public void testaIndex() {
+        String html = getContentString("/a");
+        Assert.assertEquals(html,"Hello DIY Tomcat from index.html@a");
     }
+    @Test
+    public void testbIndex() {
+        String html = getContentString("/b/");
+        Assert.assertEquals(html,"Hello DIY Tomcat from index.html@b");
+    }
+
     @Test
     public void test404() {
         //访问某个不存在的 html , 然后断言 返回的 http 响应里包含 HTTP/1.1 404 Not Found,

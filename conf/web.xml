@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <!--tomcat 关于文件的默认配置其实都是放在这里的-->
+    <welcome-file-list>
+        <wecome-file>index.html</wecome-file>
+        <wecome-file>index.jsp</wecome-file>
+        <wecome-file>index.htm</wecome-file>
+    </welcome-file-list>
+</web-app>
