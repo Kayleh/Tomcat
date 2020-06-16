@@ -17,7 +17,7 @@ import java.util.Set;
 public class MiniBrowser {
 
     public static void main(String[] args) throws Exception {
-        String url = "http://static.how2j.cn/diytomcat.html";
+        String url = "http://static.Kayleh.cn/diytomcat.html";
         String contentString = getContentString(url, false);
         System.out.println(contentString);
         String httpString = getHttpString(url, false);

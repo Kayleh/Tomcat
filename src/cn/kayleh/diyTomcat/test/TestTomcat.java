@@ -42,7 +42,7 @@ public class TestTomcat {
     @Test
     public void testHelloTomcat() {
         String html = getContentString("/");
-        Assert.assertEquals(html, "Hello DIY Tomcat from kayleh.cn");
+        Assert.assertEquals(html, "Hello DIY Tomcat from Kayleh.cn");
     }
 
 
@@ -104,6 +104,12 @@ public class TestTomcat {
         // 毕竟返回的整个 http 响应那么长，不好用 equals 来比较，只要包含关键的头信息，就算测试通过啦
         String response  = getHttpString("/not_exist.html");
         containAssert(response, "HTTP/1.1 404 Not Found");
+    }
+
+    @Test
+    public void test500() {
+        String response  = getHttpString("/500.html");
+        containAssert(response, "HTTP/1.1 500 Internal Server Error");
     }
 
 

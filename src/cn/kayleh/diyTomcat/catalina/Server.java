@@ -60,6 +60,11 @@ public class Server {
                             }
                             System.out.println("uri:" + uri);
                             Context context = request.getContext();
+
+                            if("/500.html".equals(uri)){
+                                throw new Exception("this is a deliberately created exception");
+                            }
+
                             if ("/".equals(uri)) {
                                 String html = "Hello DIY Tomcat from Kayleh.cn";
                                 response.getWriter().println(html);
@@ -84,8 +89,9 @@ public class Server {
                                 }
                             }
                             handle200(accept, response);
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                        } catch (Exception e) {
+                            LogFactory.get().error(e);
+                            handle500(accept, e);
                         } finally {
                             try {
                                 if (!accept.isClosed())
@@ -150,5 +156,35 @@ public class Server {
         responseText = Constant.response_head_404 + responseText;
         byte[] responseByte = responseText.getBytes("utf-8");
         outputStream.write(responseByte);
+    }
+
+    protected void handle500(Socket accept, Exception e) {
+        try {
+            OutputStream outputStream = accept.getOutputStream();
+            //e.getStackTrace(); 拿到 Exception 的异常堆栈，比如平时我们看到一个报错，都会打印最哪个类的哪个方法，
+            // 依次调用过来的信息。 这个信息就放在这个 StackTrace里，是个 StackTraceElement 数组。
+            //然后准备个 StringBuffer() , 首先把 e.toString() 信息放进去， 然后挨个把这些堆栈信息放进去，
+            // 就会组成如图所示的这样一个 html 效果了。
+            StackTraceElement[] stackTrace = e.getStackTrace();
+            StringBuffer stringBuffer = new StringBuffer();
+            stringBuffer.append(e.toString());
+            stringBuffer.append("\r\n");
+            for (StackTraceElement stackTraceElement : stackTrace) {
+                stringBuffer.append("\t");
+                stringBuffer.append(stackTraceElement.toString());
+                stringBuffer.append("\r\n");
+            }
+            String message = e.getMessage();
+            //有时候消息太长，超过20个，截短一点方便显示
+            if (null != message && message.length() > 20) {
+                message = message.substring(0, 19);
+            }
+            String format = StrUtil.format(Constant.textFormat_500, message, e.toString(), stringBuffer.toString());
+            format = Constant.response_head_500 + format;
+            byte[] responseBytes = format.getBytes();
+            outputStream.write(responseBytes);
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
     }
 }
