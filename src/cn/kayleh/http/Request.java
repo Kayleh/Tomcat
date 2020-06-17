@@ -72,7 +72,10 @@ public class Request {
     //parseHttpRequest 用于解析 http请求字符串， 这里面就调用了 MiniBrowser里重构的 readBytes 方法。
     private void parseHttpRequest() throws IOException {
         InputStream is = this.socket.getInputStream();
-        byte[] bytes = MiniBrowser.readBytes(is);
+
+        //false  如果读取到的数据不够 bufferSize ,那么就不继续读取了。
+        //不能用过 true 呢？ 因为浏览器默认使用长连接，发出的连接不会主动关闭，那么 Request 读取数据的时候 就会卡在那里了
+        byte[] bytes = MiniBrowser.readBytes(is, false);
         requestString = new String(bytes, "utf-8");
     }
 

@@ -5,6 +5,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.http.HttpUtil;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.InternalException;
 import org.jsoup.internal.StringUtil;
@@ -12,9 +13,12 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+
+import static cn.kayleh.diyTomcat.util.MiniBrowser.getContentBytes;
 
 /**
  * @Author: Wizard
@@ -129,7 +133,21 @@ public class TestTomcat {
         String response  = getHttpString("/a.txt");
         containAssert(response, "Content-Type: text/plain");
     }
-
+    @Test
+    public void testPNG() {
+        byte[] bytes = getContentBytes("/logo.png");
+        int pngFileLength = 1672;
+        Assert.assertEquals(pngFileLength, bytes.length);
+    }
+    @Test
+    public void testPDF() {
+        String uri = "/etf.pdf";
+        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        HttpUtil.download(url, baos, true);
+        int pdfFileLength = 3590775;
+        Assert.assertEquals(pdfFileLength, baos.toByteArray().length);
+    }
 
 
 
@@ -151,6 +169,13 @@ public class TestTomcat {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String content = MiniBrowser.getContentString(url);
         return content;
+    }
+    private byte[] getContentBytes(String uri) {
+        return getContentBytes(uri,false);
+    }
+    private byte[] getContentBytes(String uri,boolean gzip) {
+        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        return MiniBrowser.getContentBytes(url,false);
     }
 
 

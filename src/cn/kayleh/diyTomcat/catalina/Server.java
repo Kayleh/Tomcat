@@ -81,8 +81,11 @@ public class Server {
                                 String mimeType = WebXMLUtil.getMimeType(extName);
                                 response.setContentType(mimeType);
 
-                                String fileContent = FileUtil.readUtf8String(file);
-                                response.getWriter().println(fileContent);
+                                byte[] bytes = FileUtil.readBytes(file);
+                                response.setBody(bytes);
+//                                String fileContent = FileUtil.readUtf8String(file);
+//                                response.getWriter().println(fileContent);
+
                                 //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
                                 // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
                                 if (fileName.equals("TimeConsume.html")) {

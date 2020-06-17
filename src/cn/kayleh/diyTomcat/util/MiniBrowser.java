@@ -131,7 +131,7 @@ public class MiniBrowser {
 //            //把读取到的数据，根据实际长度，写出到 一个字节数组输出流里。
 //            result = byteArrayOutputStream.toByteArray();
 
-            result = readBytes(is);
+            result = readBytes(is, true);
             client.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -146,10 +146,10 @@ public class MiniBrowser {
 
     }
 
-    public static byte[] readBytes(InputStream inputStream) throws IOException {
+    public static byte[] readBytes(InputStream inputStream, boolean fully) throws IOException {
         //准备一个 1024长度的缓存，不断地从输入流读取数据到这个缓存里面去。
         int buffer_size = 1024;
-        byte buffer[] = new byte[buffer_size];
+        byte[] buffer = new byte[buffer_size];
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         while (true) {
             //如果读取到的长度是 -1，那么就表示到头了，就停止循环
@@ -158,8 +158,10 @@ public class MiniBrowser {
                 break;
             //如果读取到的长度小于 buffer_size, 说明也读完了
             byteArrayOutputStream.write(buffer, 0, length);
-            if (length != buffer_size)
+            // fully 表示是否完全读取。
+            if (!fully && length != buffer_size)
                 break;
+
         }
         //把读取到的数据，根据实际长度，写出到 一个字节数组输出流里。
         byte[] result = byteArrayOutputStream.toByteArray();
