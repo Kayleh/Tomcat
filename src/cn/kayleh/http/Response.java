@@ -29,6 +29,10 @@ public class Response {
         return ContentType;
     }
 
+    public void setContentType(String contentType) {
+        ContentType = contentType;
+    }
+
     //response.getWriter().println();
     public PrintWriter getWriter() {
         return writer;

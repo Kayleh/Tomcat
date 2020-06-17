@@ -76,6 +76,11 @@ public class Server {
                             File file = FileUtil.file(context.getDocBase(), fileName);
                             if (file.exists()) {
                                 //如果文件存在
+                                //格式
+                                String extName = FileUtil.extName(file);
+                                String mimeType = WebXMLUtil.getMimeType(extName);
+                                response.setContentType(mimeType);
+
                                 String fileContent = FileUtil.readUtf8String(file);
                                 response.getWriter().println(fileContent);
                                 //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
