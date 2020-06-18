@@ -22,7 +22,7 @@ import java.net.Socket;
  */
 //处理请求
 public class HttpProcessor {
-    public void excute(Socket socket, Request request, Response response) {
+    public void execute(Socket acept, Request request, Response response) {
         try {
             String uri = request.getUri();
             if (null == uri) {
@@ -36,46 +36,46 @@ public class HttpProcessor {
             if ("/hello".equals(uri)) {
                 HelloServlet helloServlet = new HelloServlet();
                 helloServlet.doGet(request, response);
-            }
+            } else {
+                if ("/".equals(uri))
+                    uri = WebXMLUtil.getWelcomeFile(request.getContext());
 
-            if ("/".equals(uri))
-                uri = WebXMLUtil.getWelcomeFile(request.getContext());
+                //如果访问的是a.html ，
+                // URI地址为/a.html ,
+                // fileName为 a.html
+                String fileName = StrUtil.removePrefix(uri, "/");
+                File file = FileUtil.file(context.getDocBase(), fileName);
+                if (file.exists()) {
+                    //如果文件存在
+                    //格式
+                    String extName = FileUtil.extName(file);
+                    String mimeType = WebXMLUtil.getMimeType(extName);
+                    response.setContentType(mimeType);
 
-            //如果访问的是a.html ，
-            // URI地址为/a.html ,
-            // fileName为 a.html
-            String fileName = StrUtil.removePrefix(uri, "/");
-            File file = FileUtil.file(context.getDocBase(), fileName);
-            if (file.exists()) {
-                //如果文件存在
-                //格式
-                String extName = FileUtil.extName(file);
-                String mimeType = WebXMLUtil.getMimeType(extName);
-                response.setContentType(mimeType);
-
-                byte[] bytes = FileUtil.readBytes(file);
-                response.setBody(bytes);
+                    byte[] bytes = FileUtil.readBytes(file);
+                    response.setBody(bytes);
 //                                String fileContent = FileUtil.readUtf8String(file);
 //                                response.getWriter().println(fileContent);
 
-                //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
-                // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
-                if (fileName.equals("TimeConsume.html")) {
-                    ThreadUtil.sleep(1000);
-                }
-            } else {
-                handle404(socket, uri);
-                return;
-            }
+                    //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
+                    // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
 
-            handle200(socket, response);
+                    if (fileName.equals("TimeConsume.html")) {
+                        ThreadUtil.sleep(1000);
+                    }
+                } else {
+                    handle404(acept, uri);
+                    return;
+                }
+            }
+            handle200(acept, response);
         } catch (Exception e) {
             LogFactory.get().error(e);
-            handle500(socket, e);
+            handle500(acept, e);
         } finally {
             try {
-                if (!socket.isClosed())
-                    socket.close();
+                if (!acept.isClosed())
+                    acept.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -83,7 +83,7 @@ public class HttpProcessor {
     }
 
 
-    private void handle200(Socket accept, Response response) throws IOException {
+    private static void handle200(Socket accept, Response response) throws IOException {
         String contentType = response.getContentType();
         String headText = Constant.response_head_202;
         headText = StrUtil.format(headText, contentType);
@@ -99,7 +99,7 @@ public class HttpProcessor {
 //        accept.close();
     }
 
-    protected void handle404(Socket socket, String uri) throws IOException {
+    private  void handle404(Socket socket, String uri) throws IOException {
         OutputStream outputStream = socket.getOutputStream();
         String responseText = StrUtil.format(Constant.textFormat_404, uri, uri);
         //响应文本 = 响应头+响应体
@@ -108,7 +108,7 @@ public class HttpProcessor {
         outputStream.write(responseByte);
     }
 
-    protected void handle500(Socket accept, Exception e) {
+    private  void handle500(Socket accept, Exception e) {
         try {
             OutputStream outputStream = accept.getOutputStream();
             //e.getStackTrace(); 拿到 Exception 的异常堆栈，比如平时我们看到一个报错，都会打印最哪个类的哪个方法，

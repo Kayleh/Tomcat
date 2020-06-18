@@ -2,16 +2,9 @@ package cn.kayleh.diyTomcat.catalina;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
-import cn.kayleh.diyTomcat.util.Constant;
-import cn.kayleh.http.Response;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.Socket;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;

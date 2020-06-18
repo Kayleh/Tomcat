@@ -1,20 +1,11 @@
 package cn.kayleh.diyTomcat.catalina;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.thread.ThreadUtil;
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
-import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
-import cn.kayleh.diyTomcat.util.WebXMLUtil;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -53,19 +44,17 @@ public class Connector implements Runnable {
                         try {
                             Request request = new Request(accept, service);
                             Response response = new Response();
-                            String uri = request.getUri();
                             HttpProcessor httpProcessor = new HttpProcessor();
-                            httpProcessor.excute(accept, request, response);
+                            httpProcessor.execute(accept, request, response);
                         } catch (IOException e) {
                             e.printStackTrace();
                         } finally {
-                            if (!accept.isClosed()) {
+                            if (!accept.isClosed())
                                 try {
                                     accept.close();
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-                            }
                         }
                     }
                 };
@@ -75,8 +64,6 @@ public class Connector implements Runnable {
             LogFactory.get().error(e);
             e.printStackTrace();
         }
-
-
     }
 
     public void init() {

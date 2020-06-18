@@ -53,7 +53,7 @@ public class Response implements HttpServletResponse {
     }
 
     public void setContentType(String contentType) {
-        ContentType = contentType;
+        this.ContentType = contentType;
     }
 
     @Override
@@ -115,7 +115,7 @@ public class Response implements HttpServletResponse {
 
         if (null == body) {
             String content = stringWriter.toString();
-            byte[] body = content.getBytes("utf-8");
+            body = content.getBytes("utf-8");
         }
         //当body 不为空的时候，直接返回 body
         return body;
