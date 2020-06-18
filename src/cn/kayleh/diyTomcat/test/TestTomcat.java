@@ -106,48 +106,59 @@ public class TestTomcat {
     @Test
     public void testaIndex() {
         String html = getContentString("/a");
-        Assert.assertEquals(html,"Hello DIY Tomcat from index.html@a");
+        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@a");
     }
+
     @Test
     public void testbIndex() {
         String html = getContentString("/b/");
-        Assert.assertEquals(html,"Hello DIY Tomcat from index.html@b");
+        Assert.assertEquals(html, "Hello DIY Tomcat from index.html@b");
     }
 
     @Test
     public void test404() {
         //访问某个不存在的 html , 然后断言 返回的 http 响应里包含 HTTP/1.1 404 Not Found,
         // 毕竟返回的整个 http 响应那么长，不好用 equals 来比较，只要包含关键的头信息，就算测试通过啦
-        String response  = getHttpString("/not_exist.html");
+        String response = getHttpString("/not_exist.html");
         containAssert(response, "HTTP/1.1 404 Not Found");
     }
 
     @Test
     public void test500() {
-        String response  = getHttpString("/500.html");
+        String response = getHttpString("/500.html");
         containAssert(response, "HTTP/1.1 500 Internal Server Error");
     }
 
     @Test
     public void testaTxt() {
-        String response  = getHttpString("/a.txt");
+        String response = getHttpString("/a.txt");
         containAssert(response, "Content-Type: text/plain");
     }
+
     @Test
     public void testPNG() {
         byte[] bytes = getContentBytes("/logo.png");
         int pngFileLength = 1672;
         Assert.assertEquals(pngFileLength, bytes.length);
     }
+
     @Test
     public void testPDF() {
         String uri = "/etf.pdf";
-        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         HttpUtil.download(url, baos, true);
         int pdfFileLength = 3590775;
         Assert.assertEquals(pdfFileLength, baos.toByteArray().length);
     }
+
+    @Test
+    public void testhello() {
+        String html = getContentString("/hello");
+        Assert.assertEquals(html, "Hello DIY Tomcat from HelloServlet");
+    }
+
+
 
 
 
@@ -158,7 +169,7 @@ public class TestTomcat {
     }
 
     //增加一个 getHttpString 方法来获取 Http 响应
-    public String getHttpString(String uri){
+    public String getHttpString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String http = MiniBrowser.getHttpString(url);
         return http;
@@ -170,12 +181,14 @@ public class TestTomcat {
         String content = MiniBrowser.getContentString(url);
         return content;
     }
+
     private byte[] getContentBytes(String uri) {
-        return getContentBytes(uri,false);
+        return getContentBytes(uri, false);
     }
-    private byte[] getContentBytes(String uri,boolean gzip) {
-        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
-        return MiniBrowser.getContentBytes(url,false);
+
+    private byte[] getContentBytes(String uri, boolean gzip) {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        return MiniBrowser.getContentBytes(url, false);
     }
 
 

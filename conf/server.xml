@@ -3,6 +3,10 @@
 <Server>
     <!--Service 是 Engine 的父节点，用于代表 tomcat 提供的服务。它里面会有很多Connector对象-->
     <Service name="Catalina">
+        <!--可以支持多个端口-->
+        <Connector port="8888"/>
+        <Connector port="7777"/>
+        <Connector port="6666"/>
         <Engine defaultHost="localhost">
             <Host name="localhost">
                 <!-- Host 的意思是虚拟主机。 通常都是 localhost, 即表示本机。-->

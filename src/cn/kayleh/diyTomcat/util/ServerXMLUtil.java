@@ -1,15 +1,13 @@
 package cn.kayleh.diyTomcat.util;
 
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.FileUtil;
-import cn.kayleh.diyTomcat.catalina.Context;
-import cn.kayleh.diyTomcat.catalina.Engine;
-import cn.kayleh.diyTomcat.catalina.Host;
+import cn.kayleh.diyTomcat.catalina.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +65,22 @@ public class ServerXMLUtil {
         }
         return result;
 
+    }
+
+    //获取 Connectors 集合
+    public static List<Connector> getConnector(Service service) {
+        List<Connector> result = new ArrayList<>();
+        String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
+        Document document = Jsoup.parse(xml);
+        Elements elements = document.select("Connector");
+        for (Element element : elements) {
+            int port = Convert.toInt(element.attr("port"));
+            Connector connector = new Connector(service);
+            connector.setPort(port);
+            result.add(connector);
+
+        }
+        return result;
     }
 
 }
