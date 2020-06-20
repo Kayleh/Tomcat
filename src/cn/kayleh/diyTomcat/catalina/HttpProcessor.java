@@ -6,6 +6,7 @@ import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
+import cn.kayleh.diyTomcat.servlets.DefaultServlet;
 import cn.kayleh.diyTomcat.servlets.InvokerServlet;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.WebXMLUtil;
@@ -13,6 +14,7 @@ import cn.kayleh.diyTomcat.webappservlet.HelloServlet;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
+import javax.servlet.ServletException;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -41,47 +43,15 @@ public class HttpProcessor {
 //                Object servletObject = ReflectUtil.newInstance(servletClassName);
 //                ReflectUtil.invoke(servletObject, "doGet", request, response);
             } else {
-
-                if ("/500.html".equals(uri)) {
-                    throw new Exception("this is a deliberately created exception");
-                }
-                if ("/hello".equals(uri)) {
-                    HelloServlet helloServlet = new HelloServlet();
-                    helloServlet.doGet(request, response);
-                } else {
-                    if ("/".equals(uri))
-                        uri = WebXMLUtil.getWelcomeFile(request.getContext());
-
-                    //如果访问的是a.html ，
-                    // URI地址为/a.html ,
-                    // fileName为 a.html
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(context.getDocBase(), fileName);
-                    if (file.exists()) {
-                        //如果文件存在
-                        //格式
-                        String extName = FileUtil.extName(file);
-                        String mimeType = WebXMLUtil.getMimeType(extName);
-                        response.setContentType(mimeType);
-
-                        byte[] bytes = FileUtil.readBytes(file);
-                        response.setBody(bytes);
-//                                String fileContent = FileUtil.readUtf8String(file);
-//                                response.getWriter().println(fileContent);
-
-                        //耗时任务只的是访问某个页面，比较消耗时间，比如连接数据库什么的。
-                        // 这里为了简化，故意设计成访问 timeConsume.html会花掉1秒钟。
-
-                        if (fileName.equals("TimeConsume.html")) {
-                            ThreadUtil.sleep(1000);
-                        }
-                    } else {
-                        handle404(acept, uri);
-                        return;
-                    }
-                }
+                DefaultServlet.getInstance().service(request, response);
             }
-            handle200(acept, response);
+
+            if (Constant.CODE_200 == response.getStatus()) {
+                handle200(acept, response);
+            }
+            if (Constant.CODE_404 == response.getStatus()) {
+                handle404(acept, uri);
+            }
         } catch (Exception e) {
             LogFactory.get().error(e);
             handle500(acept, e);
@@ -94,7 +64,6 @@ public class HttpProcessor {
             }
         }
     }
-
 
     private static void handle200(Socket accept, Response response) throws IOException {
         String contentType = response.getContentType();

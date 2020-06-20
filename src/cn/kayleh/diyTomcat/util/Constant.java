@@ -11,6 +11,11 @@ import java.io.File;
  * @Date: 2020/6/10 20:27
  */
 public class Constant {
+    public static final int CODE_200 = 200;
+    public static final int CODE_302 = 302;
+    public static final int CODE_404 = 404;
+    public static final int CODE_500 = 500;
+
     public final static String response_head_202 =
             "HTTP/1.1 200 OK\r\n" + "Content-Type: {}\r\n\r\n";
     //增加一个 404 的头信息，它会返回 404 代码已经 Not Found 字符串

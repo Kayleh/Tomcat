@@ -2,6 +2,7 @@ package cn.kayleh.diyTomcat.servlets;
 
 import cn.hutool.core.util.ReflectUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
+import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.http.Request;
 import cn.kayleh.http.Response;
 
@@ -13,6 +14,7 @@ import java.io.IOException;
 
 /**
  * 处理Servlet
+ *
  * @Author: Wizard
  * @Date: 2020/6/20 10:37
  */
@@ -38,5 +40,7 @@ public class InvokerServlet extends HttpServlet {
         Object servletObject = ReflectUtil.newInstance(servletClassName);
         ReflectUtil.invoke(servletObject, "service", request, response);
 
+        //表示处理成功了
+        response.setStatus(Constant.CODE_200);
     }
 }

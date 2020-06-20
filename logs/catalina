@@ -280,3 +280,70 @@ java.lang.Exception: this is a deliberately created exception
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+06 20, 2020 13:29:51 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.Exception: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:46)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 96 ms
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 5 ms
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Context deploy
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 0 ms
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 20, 2020 13:30:01 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 5 ms
+06 20, 2020 13:30:05 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:46)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
