@@ -6,6 +6,7 @@ import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
+import cn.kayleh.diyTomcat.servlets.InvokerServlet;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.WebXMLUtil;
 import cn.kayleh.diyTomcat.webappservlet.HelloServlet;
@@ -36,8 +37,9 @@ public class HttpProcessor {
             //通过 context 获取 servletClassName， 如果是空就表示不是访问的 servlet。
             //通过类名 servletClassName 实例化 servlet 对象，然后调用其 doGet 方法。
             if (null != servletClassName) {
-                Object servletObject = ReflectUtil.newInstance(servletClassName);
-                ReflectUtil.invoke(servletObject, "doGet", request, response);
+                InvokerServlet.getInstance().service(request, response);
+//                Object servletObject = ReflectUtil.newInstance(servletClassName);
+//                ReflectUtil.invoke(servletObject, "doGet", request, response);
             } else {
 
                 if ("/500.html".equals(uri)) {

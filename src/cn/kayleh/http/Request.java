@@ -24,6 +24,8 @@ public class Request extends BaseRequest {
     private Context context;
     private Service service;
 
+    private String method;
+
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
         this.service = service;
@@ -36,14 +38,24 @@ public class Request extends BaseRequest {
         // 比如 uri 是 /a/index.html， 获取出来的 Context路径不是 "/”， 那么要修正 uri 为 /index.html。
         parseContext();
 
-        if (!"/".equals(context.getPath())) {
+        parseMethod();
 
+        if (!"/".equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
             if (StrUtil.isEmpty(uri)) {
                 uri = "/";
             }
         }
+    }
 
+    @Override
+    public String getMethod() {
+        return method;
+    }
+
+    //提供解析方法，其实就是取第一个空格之前的数据。
+    private void parseMethod() {
+        method = StrUtil.subBefore(requestString, " ", false);
     }
 
     //解析Context 的方法， 通过获取uri 中的信息来得到 path. 然后根据这个 path 来获取 Context 对象。
