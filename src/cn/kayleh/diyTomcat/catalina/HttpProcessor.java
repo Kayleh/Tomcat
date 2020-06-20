@@ -1,21 +1,14 @@
 package cn.kayleh.diyTomcat.catalina;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.servlets.DefaultServlet;
 import cn.kayleh.diyTomcat.servlets.InvokerServlet;
 import cn.kayleh.diyTomcat.util.Constant;
-import cn.kayleh.diyTomcat.util.WebXMLUtil;
-import cn.kayleh.diyTomcat.webappservlet.HelloServlet;
-import cn.kayleh.http.Request;
-import cn.kayleh.http.Response;
+import cn.kayleh.diyTomcat.http.Request;
+import cn.kayleh.diyTomcat.http.Response;
 
-import javax.servlet.ServletException;
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;

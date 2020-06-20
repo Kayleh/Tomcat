@@ -3,8 +3,8 @@ package cn.kayleh.diyTomcat.servlets;
 import cn.hutool.core.util.ReflectUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.util.Constant;
-import cn.kayleh.http.Request;
-import cn.kayleh.http.Response;
+import cn.kayleh.diyTomcat.http.Request;
+import cn.kayleh.diyTomcat.http.Response;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

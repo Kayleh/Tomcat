@@ -2,8 +2,8 @@ package cn.kayleh.diyTomcat.catalina;
 
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.util.ThreadPoolUtil;
-import cn.kayleh.http.Request;
-import cn.kayleh.http.Response;
+import cn.kayleh.diyTomcat.http.Request;
+import cn.kayleh.diyTomcat.http.Response;
 
 import java.io.IOException;
 import java.net.ServerSocket;
