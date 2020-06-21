@@ -11,6 +11,7 @@
             <Host name="localhost">
                 <!-- Host 的意思是虚拟主机。 通常都是 localhost, 即表示本机。-->
                 <Context path="/b" docBase="d:/project/diyTomcat/b"/>
+                <Context path="/javaee" docBase="d:/project/javaweb/web"/>
             </Host>
         </Engine>
     </Service>

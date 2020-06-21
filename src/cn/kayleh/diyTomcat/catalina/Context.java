@@ -5,6 +5,7 @@ import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
+import cn.kayleh.diyTomcat.classloader.WebappClassLoader;
 import cn.kayleh.diyTomcat.exception.WebConfigDuplicatedException;
 import cn.kayleh.diyTomcat.util.ContextXMLUtil;
 import org.jsoup.Jsoup;
@@ -42,6 +43,9 @@ public class Context {
     //Servlet 类名对应名称
     private Map<String, String> ClassName_serveltName;
 
+    private WebappClassLoader webappClassLoader;
+
+
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
      *
@@ -49,6 +53,7 @@ public class Context {
      * @param docBase
      */
     public Context(String path, String docBase) {
+        TimeInterval timeInterval = DateUtil.timer();
         this.path = path;
         this.docBase = docBase;
         this.contextWebXmlFile = new File(docBase, ContextXMLUtil.getWatchedResource());
@@ -57,7 +62,15 @@ public class Context {
         this.ServeltName_ClassName = new HashMap<>();
         this.ClassName_serveltName = new HashMap<>();
 
+        //在构造方法中初始化它，这里的 Thread.currentThread().getContextClassLoader() 就可以获取到 Bootstrap
+        // 里通过 Thread.currentThread().setContextClassLoader(commonClassLoader); 设置的 commonClassLoader.
+        //然后 根据 Tomcat 类加载器体系 commonClassLoader 作为 WebappClassLoader 父类存在。
+        ClassLoader commonClassLoader = Thread.currentThread().getContextClassLoader();
+        this.webappClassLoader = new WebappClassLoader(docBase, commonClassLoader);
+
+        LogFactory.get().info("Deploying web application directory {}", this.docBase);
         deploy();
+        LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
 
     /**
@@ -65,8 +78,7 @@ public class Context {
      */
     private void deploy() {
         TimeInterval timeInterval = DateUtil.timer();
-        //在构造方法中打上日志
-        LogFactory.get().info("Deploying web application directory {}", this.docBase);
+
         init();
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
@@ -145,6 +157,11 @@ public class Context {
         checkDuplicated(document, "servlet-mapping url-pattern", "servlet url 重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-name", "servlet 名称重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-class", "servlet 类名重复,请保持其唯一性:{} ");
+    }
+
+    //一个Web应用，应该有一个自己独立的 WebappClassLoader ， 所以在Context 里加上 webappClassLoader 属性，以及一个getter
+    public WebappClassLoader getWebappClassLoader() {
+        return webappClassLoader;
     }
 
     //通过 uri 获取Servlet 类名
