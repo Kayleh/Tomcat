@@ -8,6 +8,7 @@ import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.classloader.WebappClassLoader;
 import cn.kayleh.diyTomcat.exception.WebConfigDuplicatedException;
 import cn.kayleh.diyTomcat.util.ContextXMLUtil;
+import cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -45,6 +46,9 @@ public class Context {
 
     private WebappClassLoader webappClassLoader;
 
+    private Host host;
+    private boolean reloadable;
+    private ContextFileChangeWatcher contextFileChangeWatcher;
 
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
@@ -52,11 +56,16 @@ public class Context {
      * @param path
      * @param docBase
      */
-    public Context(String path, String docBase) {
+    public Context(String path, String docBase, Host host, boolean reloadable) {
         TimeInterval timeInterval = DateUtil.timer();
+
+        this.host = host;
+        this.reloadable = reloadable;
+
         this.path = path;
         this.docBase = docBase;
         this.contextWebXmlFile = new File(docBase, ContextXMLUtil.getWatchedResource());
+
         this.url_serveltClassName = new HashMap<>();
         this.url_serveltName = new HashMap<>();
         this.ServeltName_ClassName = new HashMap<>();
@@ -73,14 +82,30 @@ public class Context {
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
 
+    //停止方法，把 webappClassLoader 和 contextFileChangeWatcher 停止了
+    public void stop() {
+        webappClassLoader.stop();
+        contextFileChangeWatcher.stop();
+    }
+
+    //重载方法，通过它的父对象来重载它
+    public void reload() {
+        host.reload(this);
+    }
+
     /**
      * 创建一个 Deploy 方法， 调用 init, 并打印日志
      */
     private void deploy() {
         TimeInterval timeInterval = DateUtil.timer();
-
         init();
-        LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
+        //在deploy 方法中初始化contextFileChangeWatcher ，并启动
+
+        if (reloadable) {
+            ContextFileChangeWatcher contextFileChangeWatcher = new ContextFileChangeWatcher(this);
+            contextFileChangeWatcher.start();
+//            LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
+        }
     }
 
     /**
@@ -157,6 +182,14 @@ public class Context {
         checkDuplicated(document, "servlet-mapping url-pattern", "servlet url 重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-name", "servlet 名称重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-class", "servlet 类名重复,请保持其唯一性:{} ");
+    }
+
+    public boolean isReloadable() {
+        return reloadable;
+    }
+
+    public void setReloadable(boolean reloadable) {
+        this.reloadable = reloadable;
     }
 
     //一个Web应用，应该有一个自己独立的 WebappClassLoader ， 所以在Context 里加上 webappClassLoader 属性，以及一个getter

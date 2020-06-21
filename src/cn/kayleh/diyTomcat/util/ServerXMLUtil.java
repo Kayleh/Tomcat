@@ -16,7 +16,9 @@ import java.util.List;
  * @Date: 2020/6/13 20:44
  */
 public class ServerXMLUtil {
-    public static List<Context> getContexts() {
+
+    //getContexts 方法，传如 Host 参数， 创建 Context 对象的时候带上 host 和 reloadable 参数。
+    public static List<Context> getContexts(Host host) {
         List<Context> result = new ArrayList<>();
         //获取 server.xml 的内容
         String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
@@ -29,7 +31,8 @@ public class ServerXMLUtil {
         for (Element element : elements) {
             String path = element.attr("path");
             String docBase = element.attr("docBase");
-            Context context = new Context(path, docBase);
+            boolean reloadable = Convert.toBool(element.attr("reloadable"),true);
+            Context context = new Context(path, docBase,host,reloadable);
             result.add(context);
         }
         return result;
@@ -78,7 +81,6 @@ public class ServerXMLUtil {
             Connector connector = new Connector(service);
             connector.setPort(port);
             result.add(connector);
-
         }
         return result;
     }

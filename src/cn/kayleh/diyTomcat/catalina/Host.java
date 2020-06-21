@@ -1,5 +1,6 @@
 package cn.kayleh.diyTomcat.catalina;
 
+import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ServerXMLUtil;
 
@@ -31,7 +32,7 @@ public class Host {
 
     //创建scanContextsInServerXML， 通过 ServerXMLUtil 获取 context, 放进 contextMap里。
     private void scanContextsInServerXML() {
-        List<Context> contexts = ServerXMLUtil.getContexts();
+        List<Context> contexts = ServerXMLUtil.getContexts(this);
         for (Context context : contexts) {
             contextMap.put(context.getPath(), context);
         }
@@ -68,13 +69,36 @@ public class Host {
             path = "/" + path;
         }
         String docBase = folder.getAbsolutePath();
-        Context context = new Context(path, docBase);
+        Context context = new Context(path, docBase, this, true);
         contextMap.put(context.getPath(), context);
     }
 
     //提供 getContext 用于通过 path 获取 Context 对象
     public Context getContext(String path) {
         return contextMap.get(path);
+    }
+
+
+    public void reload(Context context) {
+        // 先保存 path, docBase, relodable 这些基本信息
+        LogFactory.get().info("Reloading Context with name [{}] has started", context.getPath());
+        String path = context.getPath();
+        String docBase = context.getDocBase();
+        boolean reloadable = context.isReloadable();
+        // 调用 context.stop() 来暂停
+        //stop
+        context.stop();
+        //把它从 contextMap 里删掉
+        //remove
+        contextMap.remove(path);
+        // allocate new context
+        //根据刚刚保存的信息，创建一个新的context
+        Context newContext = new Context(path, docBase, this, reloadable);
+        // assign it to map
+        //设置到 contextMap 里
+        contextMap.put(newContext.getPath(), newContext);
+        //开始和结束打印日志
+        LogFactory.get().info("Reloading Context with name [{}] has completed", context.getPath());
     }
 
 
