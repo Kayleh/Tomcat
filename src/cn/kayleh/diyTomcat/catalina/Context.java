@@ -7,6 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.classloader.WebappClassLoader;
 import cn.kayleh.diyTomcat.exception.WebConfigDuplicatedException;
+import cn.kayleh.diyTomcat.http.ApplicationContext;
 import cn.kayleh.diyTomcat.util.ContextXMLUtil;
 import cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher;
 import org.jsoup.Jsoup;
@@ -15,6 +16,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import javax.print.Doc;
+import javax.servlet.ServletContext;
 import java.io.File;
 import java.util.*;
 
@@ -50,6 +52,8 @@ public class Context {
     private boolean reloadable;
     private ContextFileChangeWatcher contextFileChangeWatcher;
 
+    private ServletContext servletContext;
+
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
      *
@@ -70,6 +74,8 @@ public class Context {
         this.url_serveltName = new HashMap<>();
         this.ServeltName_ClassName = new HashMap<>();
         this.ClassName_serveltName = new HashMap<>();
+
+        this.servletContext = new ApplicationContext(this);
 
         //在构造方法中初始化它，这里的 Thread.currentThread().getContextClassLoader() 就可以获取到 Bootstrap
         // 里通过 Thread.currentThread().setContextClassLoader(commonClassLoader); 设置的 commonClassLoader.
@@ -182,6 +188,10 @@ public class Context {
         checkDuplicated(document, "servlet-mapping url-pattern", "servlet url 重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-name", "servlet 名称重复,请保持其唯一性:{} ");
         checkDuplicated(document, "servlet servlet-class", "servlet 类名重复,请保持其唯一性:{} ");
+    }
+
+    public ServletContext getServletContext() {
+        return servletContext;
     }
 
     public boolean isReloadable() {

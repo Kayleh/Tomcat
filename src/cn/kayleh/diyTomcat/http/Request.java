@@ -11,6 +11,7 @@ import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 
+import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
@@ -103,6 +104,15 @@ public class Request extends BaseRequest {
         uri = temp;
     }
 
+    @Override
+    public String getRealPath(String path) {
+        return context.getServletContext().getRealPath(path);
+    }
+
+    @Override
+    public ServletContext getServletContext() {
+        return context.getServletContext();
+    }
 
     public Context getContext() {
         return context;
