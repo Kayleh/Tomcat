@@ -51,6 +51,8 @@ public class Context {
     //Servlet 类名对应名称
     private Map<String, String> ClassName_serveltName;
 
+    private List<String> loadOnStartupServletClassNames;
+
     // 声明 servlet_className_init_params 用于存放初始化信息
     private Map<String, Map<String, String>> servlet_className_init_params;
 
@@ -84,6 +86,7 @@ public class Context {
         this.url_serveltName = new HashMap<>();
         this.ServeltName_ClassName = new HashMap<>();
         this.ClassName_serveltName = new HashMap<>();
+        this.loadOnStartupServletClassNames = new ArrayList<>();
 
         this.servlet_className_init_params = new HashMap<>();
 
@@ -139,6 +142,28 @@ public class Context {
         return servlet;
     }
 
+    //parseLoadOnStartup 解析哪些类需要做自启动
+    public void parseLoadOnStartup(Document document) {
+        Elements elements = document.select("load-on-startup");
+        for (Element element : elements) {
+            String loadOnStartupServletClassName = element.parent().select("servlet-class").text();
+            loadOnStartupServletClassNames.add(loadOnStartupServletClassName);
+        }
+    }
+
+    //对这些类做自启动
+    public void handleLoadOnStartup() {
+        for (String loadOnStartupServletClassName : loadOnStartupServletClassNames) {
+            try {
+                Class<?> clazz = webappClassLoader.loadClass(loadOnStartupServletClassName);
+                getServlet(clazz);
+            } catch (InstantiationException | ServletException | IllegalAccessException | ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
     //用于销毁所有的 servlets
     public void destroyServlets() {
         Collection<HttpServlet> servlets = servletPool.values();
@@ -170,7 +195,9 @@ public class Context {
         //在deploy 方法中初始化contextFileChangeWatcher ，并启动
 
         if (reloadable) {
-            ContextFileChangeWatcher contextFileChangeWatcher = new ContextFileChangeWatcher(this);
+            //     bug ↓
+//            ContextFileChangeWatcher contextFileChangeWatcher = new ContextFileChangeWatcher(this);
+            contextFileChangeWatcher = new ContextFileChangeWatcher(this);
             contextFileChangeWatcher.start();
 //            LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
         }
@@ -199,6 +226,9 @@ public class Context {
         parseServletMapping(document);
 
         parseServletInitParams(document);
+
+        parseLoadOnStartup(document);
+        handleLoadOnStartup();
     }
 
 
