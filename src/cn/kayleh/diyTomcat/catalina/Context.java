@@ -8,6 +8,7 @@ import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.classloader.WebappClassLoader;
 import cn.kayleh.diyTomcat.exception.WebConfigDuplicatedException;
 import cn.kayleh.diyTomcat.http.ApplicationContext;
+import cn.kayleh.diyTomcat.http.StandardServletConfig;
 import cn.kayleh.diyTomcat.util.ContextXMLUtil;
 import cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher;
 import org.jsoup.Jsoup;
@@ -16,9 +17,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import javax.print.Doc;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 /**
@@ -46,6 +50,9 @@ public class Context {
     private Map<String, String> ServeltName_ClassName;
     //Servlet 类名对应名称
     private Map<String, String> ClassName_serveltName;
+
+    // 声明 servlet_className_init_params 用于存放初始化信息
+    private Map<String, Map<String, String>> servlet_className_init_params;
 
     private WebappClassLoader webappClassLoader;
 
@@ -78,6 +85,8 @@ public class Context {
         this.ServeltName_ClassName = new HashMap<>();
         this.ClassName_serveltName = new HashMap<>();
 
+        this.servlet_className_init_params = new HashMap<>();
+
         this.servletContext = new ApplicationContext(this);
 
         this.servletPool = new HashMap<>();
@@ -93,14 +102,49 @@ public class Context {
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
 
-    //提供 getServlet 方法，根据类对象来获取 servlet 对象。
-    public synchronized HttpServlet getServlet(Class<?> clazz) throws IllegalAccessException, InstantiationException {
+    private void parseServletInitParams(Document document) {
+        Elements servletClassNameElements = document.select("servlet-class");
+        for (Element servletClassNameElement : servletClassNameElements) {
+            String servletClassName = servletClassNameElement.text();
+            Elements initElements = servletClassNameElement.parent().select("init-param");
+            if (initElements.isEmpty())
+                continue;
+            //存放初始化参数
+            Map<String, String> initsParams = new HashMap<>();
+            for (Element element : initElements) {
+                String name = element.select("param-name").get(0).text();
+                String value = element.select("param-value").get(0).text();
+                initsParams.put(name, value);
+            }
+            servlet_className_init_params.put(servletClassName, initsParams);
+        }
+        System.out.println("class_name_init_params:" + servlet_className_init_params);
+    }
+
+
+    //提供 getServlet 方法，根据类对象来获取 servlet 对象。 让 servlet 对象放进池子之前做初始化
+    public synchronized HttpServlet getServlet(Class<?> clazz)
+            throws IllegalAccessException, InstantiationException, ServletException {
         HttpServlet servlet = servletPool.get(clazz);
         if (null == servlet) {
             servlet = (HttpServlet) clazz.newInstance();
+            ServletContext servletContext = this.getServletContext();
+            String className = clazz.getName();
+            String servletName = ClassName_serveltName.get(className);
+            Map<String, String> initParams = servlet_className_init_params.get(className);
+            ServletConfig servletConfig = new StandardServletConfig(servletContext, servletName, initParams);
+            servlet.init(servletConfig);
             servletPool.put(clazz, servlet);
         }
         return servlet;
+    }
+
+    //用于销毁所有的 servlets
+    public void destroyServlets() {
+        Collection<HttpServlet> servlets = servletPool.values();
+        for (HttpServlet servlet : servlets) {
+            servlet.destroy();
+        }
     }
 
 
@@ -108,12 +152,14 @@ public class Context {
     public void stop() {
         webappClassLoader.stop();
         contextFileChangeWatcher.stop();
+        destroyServlets();
     }
 
     //重载方法，通过它的父对象来重载它
     public void reload() {
         host.reload(this);
     }
+
 
     /**
      * 创建一个 Deploy 方法， 调用 init, 并打印日志
@@ -129,6 +175,7 @@ public class Context {
 //            LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
         }
     }
+
 
     /**
      * 初始化方法
@@ -150,7 +197,10 @@ public class Context {
         String xml = FileUtil.readUtf8String(contextWebXmlFile);
         Document document = Jsoup.parse(xml);
         parseServletMapping(document);
+
+        parseServletInitParams(document);
     }
+
 
     //parseServletMapping方法，把这些信息从 web.xml 中解析出来
     private void parseServletMapping(Document document) {
