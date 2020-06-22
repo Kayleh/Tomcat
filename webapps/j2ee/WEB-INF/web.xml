@@ -5,7 +5,7 @@
         <servlet-class>cn.kayleh.diyTomcat.webappservlet.HelloServlet</servlet-class>
         <init-param>
             <param-name>author</param-name>
-            <param-value>Kayleh(servlet)</param-value>
+            <param-value>kayleh(servlet)</param-value>
         </init-param>
         <init-param>
             <param-name>site</param-name>

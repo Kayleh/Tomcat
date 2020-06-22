@@ -14,6 +14,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -172,9 +174,27 @@ public class TestTomcat {
         Assert.assertEquals(html1, html2);
     }
 
+    //增加 get 方式的测试
+    @Test
+    public void testgetParam() {
+        String uri = "/javaee/param";
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        Map<String, Object> params = new HashMap<>();
+        params.put("name", "meepo");
+        String html = MiniBrowser.getContentString(url, params, true);
+        Assert.assertEquals(html, "get name:meepo");
+    }
 
-
-
+    //增加 post 方式的测试
+    @Test
+    public void testpostParam() {
+        String uri = "/javaee/param";
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        Map<String, Object> params = new HashMap<>();
+        params.put("name", "meepo");
+        String html = MiniBrowser.getContentString(url, params, false);
+        Assert.assertEquals(html, "post name:meepo");
+    }
 
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言

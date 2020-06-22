@@ -5,16 +5,20 @@ package cn.kayleh.diyTomcat.http;
  * @Date: 2020/6/10 16:10
  */
 
+import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.URLUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 
+
 import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
+import java.util.*;
 
 public class Request extends BaseRequest {
     //创建 Request 对象用来解析 requestString 和 uri。
@@ -27,9 +31,16 @@ public class Request extends BaseRequest {
 
     private String method;
 
+    //查询字符串和参数Map
+    private String queryString;
+    private Map<String, String[]> parameterMap;
+
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
         this.service = service;
+
+        this.parameterMap = new HashMap<>();
+
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
             return;
@@ -47,7 +58,46 @@ public class Request extends BaseRequest {
                 uri = "/";
             }
         }
+        parseParameters();
+
     }
+
+    //根据 get 和 post 方式分别解析参数。 需要注意的是，参数Map里存放的值是 字符串数组类型
+    private void parseParameters() {
+        System.out.println(requestString);
+        //GET 的参数是放在 uri 里的
+        //POST 的参数是放在请求最后的请求体里的
+        if ("GET".equals(this.getMethod())) {
+            String url = StrUtil.subBetween(requestString, " ", " ");
+            if (StrUtil.contains(url, '?')) {
+                queryString = StrUtil.subAfter(url, '?', false);
+            }
+        }
+        if ("POST".equals(this.getMethod())) {
+            queryString = StrUtil.subAfter(requestString, "\r\n\r\n", false);
+        }
+        if (null == queryString || 0 == queryString.length()) {
+            return;
+        }
+        queryString = URLUtil.decode(queryString);
+        String[] parameterValues = queryString.split("&");
+        if (null != parameterValues) {
+            for (String parameterValue : parameterValues) {
+                String[] nameValues = parameterValue.split("=");
+                String name = nameValues[0];
+                String value = nameValues[1];
+                String[] values = parameterMap.get(name);
+                if (null == values) {
+                    values = new String[]{value};
+                    parameterMap.put(name, values);
+                } else {
+                    values = ArrayUtil.append(values, value);
+                    parameterMap.put(name, values);
+                }
+            }
+        }
+    }
+
 
     @Override
     public String getMethod() {
@@ -102,6 +152,29 @@ public class Request extends BaseRequest {
         }
         temp = StrUtil.subBefore(temp, '?', false);
         uri = temp;
+    }
+
+    @Override
+    public String getParameter(String name) {
+        String[] values = parameterMap.get(name);
+        if (null != values && 0 != values.length)
+            return values[0];
+        return null;
+    }
+
+    @Override
+    public Enumeration<String> getParameterNames() {
+        return Collections.enumeration(parameterMap.keySet());
+    }
+
+    @Override
+    public String[] getParameterValues(String name) {
+        return parameterMap.get(name);
+    }
+
+    @Override
+    public Map<String, String[]> getParameterMap() {
+        return parameterMap;
     }
 
     @Override
