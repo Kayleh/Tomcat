@@ -53,7 +53,7 @@ public class DefaultServlet {
         // URI地址为/a.html ,
         // fileName为 a.html
         String fileName = StrUtil.removePrefix(uri, "/");
-        File file = FileUtil.file(context.getServletContext().getRealPath(fileName), fileName);
+        File file = FileUtil.file(request.getRealPath(fileName));
 //        File file = FileUtil.file(context.getDocBase(), fileName);
         if (file.exists()) {
             //如果文件存在

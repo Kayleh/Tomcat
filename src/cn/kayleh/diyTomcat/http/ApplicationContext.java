@@ -38,7 +38,7 @@ public class ApplicationContext extends BaseServletContext {
 
     @Override
     public void setAttribute(String name, Object value) {
-        attributesMap.put(name,value);
+        attributesMap.put(name, value);
     }
 
     @Override
