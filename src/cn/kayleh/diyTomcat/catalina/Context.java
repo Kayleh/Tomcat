@@ -17,6 +17,7 @@ import org.jsoup.select.Elements;
 
 import javax.print.Doc;
 import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServlet;
 import java.io.File;
 import java.util.*;
 
@@ -54,6 +55,8 @@ public class Context {
 
     private ServletContext servletContext;
 
+    private Map<Class<?>, HttpServlet> servletPool;
+
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
      *
@@ -77,6 +80,8 @@ public class Context {
 
         this.servletContext = new ApplicationContext(this);
 
+        this.servletPool = new HashMap<>();
+
         //在构造方法中初始化它，这里的 Thread.currentThread().getContextClassLoader() 就可以获取到 Bootstrap
         // 里通过 Thread.currentThread().setContextClassLoader(commonClassLoader); 设置的 commonClassLoader.
         //然后 根据 Tomcat 类加载器体系 commonClassLoader 作为 WebappClassLoader 父类存在。
@@ -87,6 +92,17 @@ public class Context {
         deploy();
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
+
+    //提供 getServlet 方法，根据类对象来获取 servlet 对象。
+    public synchronized HttpServlet getServlet(Class<?> clazz) throws IllegalAccessException, InstantiationException {
+        HttpServlet servlet = servletPool.get(clazz);
+        if (null == servlet) {
+            servlet = (HttpServlet) clazz.newInstance();
+            servletPool.put(clazz, servlet);
+        }
+        return servlet;
+    }
+
 
     //停止方法，把 webappClassLoader 和 contextFileChangeWatcher 停止了
     public void stop() {

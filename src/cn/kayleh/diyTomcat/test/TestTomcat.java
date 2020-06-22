@@ -158,6 +158,23 @@ public class TestTomcat {
         Assert.assertEquals(html, "Hello DIY Tomcat from HelloServlet");
     }
 
+    @Test
+    public void testJavawebHello() {
+        String html = getContentString("/javaee/hello");
+        containAssert(html, "Hello DIY Tomcat from HelloServlet@javaweb");
+    }
+
+    //判断是否为单例
+    @Test
+    public void testJavawebHelloSingleton() {
+        String html1 = getContentString("/javaee/hello");
+        String html2 = getContentString("/javaee/hello");
+        Assert.assertEquals(html1, html2);
+    }
+
+
+
+
 
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
