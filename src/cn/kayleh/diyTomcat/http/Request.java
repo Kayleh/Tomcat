@@ -18,6 +18,7 @@ import sun.nio.ch.IOUtil;
 
 
 import javax.servlet.ServletContext;
+import javax.servlet.http.Cookie;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -37,11 +38,14 @@ public class Request extends BaseRequest {
 
     private String method;
 
+
     //查询字符串和参数Map
     private String queryString;
     private Map<String, String[]> parameterMap;
     //声明 headerMap用于存放头信息
     private Map<String, String> headerMap;
+
+    private Cookie[] cookies;
 
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
@@ -70,7 +74,28 @@ public class Request extends BaseRequest {
         }
         parseParameters();
         parseHeaders();
-        System.out.println(headerMap);
+        parseCookies();
+    }
+
+    //从 http 请求协议中解析出 Cookie
+    private void parseCookies() {
+        List<Cookie> cookieList = new ArrayList<>();
+        String cookies = headerMap.get("cookie");
+        if (null != cookies) {
+            String[] pairs = StrUtil.split(cookies, ";");
+            for (String pair : pairs) {
+                if (StrUtil.isBlank(pair))
+                    continue;
+                // System.out.println(pair.length());
+                // System.out.println("pair:"+pair);
+                String[] segs = StrUtil.split(pair, "=");
+                String name = segs[0].trim();
+                String value = segs[1].trim();
+                Cookie cookie = new Cookie(name, value);
+                cookieList.add(cookie);
+            }
+        }
+        this.cookies = ArrayUtil.toArray(cookieList, Cookie.class);
     }
 
     //根据 get 和 post 方式分别解析参数。 需要注意的是，参数Map里存放的值是 字符串数组类型
@@ -340,5 +365,10 @@ public class Request extends BaseRequest {
     @Override
     public int getLocalPort() {
         return socket.getLocalPort();
+    }
+
+    @Override
+    public Cookie[] getCookies() {
+        return cookies;
     }
 }

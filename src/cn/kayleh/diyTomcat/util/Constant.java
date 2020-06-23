@@ -16,8 +16,12 @@ public class Constant {
     public static final int CODE_404 = 404;
     public static final int CODE_500 = 500;
 
-    public final static String response_head_202 =
-            "HTTP/1.1 200 OK\r\n" + "Content-Type: {}\r\n\r\n";
+
+    public static final String response_head_202 =
+            "HTTP/1.1 200 OK\r\n" +
+                    "Content-Type: {}{}" +
+                    "\r\n\r\n";
+
     //增加一个 404 的头信息，它会返回 404 代码已经 Not Found 字符串
     public static final String response_head_404 =
             "HTTP/1.1 404 Not Found\r\n" + "Content-Type:text/html\r\n\r\n";

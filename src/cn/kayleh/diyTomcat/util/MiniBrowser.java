@@ -84,23 +84,21 @@ public class MiniBrowser {
         }
     }
 
-    public static String getHttpString(String url) {
-        return getHttpString(url, false, null, true);
-    }
-
     public static String getHttpString(String url, boolean gzip) {
-
         return getHttpString(url, gzip, null, true);
     }
 
-    public static String getHttpString(String url, Map<String, Object> params, boolean isGet) {
-        return getHttpString(url, false, params, isGet);
-
+    public static String getHttpString(String url) {
+        return getHttpString(url, false, null, true);
     }
 
     public static String getHttpString(String url, boolean gzip, Map<String, Object> params, boolean isGet) {
         byte[] bytes = getHttpBytes(url, gzip, params, isGet);
         return new String(bytes).trim();
+    }
+
+    public static String getHttpString(String url, Map<String, Object> params, boolean isGet) {
+        return getHttpString(url, false, params, isGet);
     }
 
 

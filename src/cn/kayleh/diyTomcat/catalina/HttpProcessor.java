@@ -9,9 +9,11 @@ import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.http.Request;
 import cn.kayleh.diyTomcat.http.Response;
 
+import javax.servlet.http.Cookie;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.List;
 
 /**
  * @Author: Wizard
@@ -41,9 +43,11 @@ public class HttpProcessor {
 
             if (Constant.CODE_200 == response.getStatus()) {
                 handle200(acept, response);
+                return;
             }
             if (Constant.CODE_404 == response.getStatus()) {
                 handle404(acept, uri);
+                return;
             }
         } catch (Exception e) {
             LogFactory.get().error(e);
@@ -61,7 +65,9 @@ public class HttpProcessor {
     private static void handle200(Socket accept, Response response) throws IOException {
         String contentType = response.getContentType();
         String headText = Constant.response_head_202;
-        headText = StrUtil.format(headText, contentType);
+        String cookiesHeader = response.getCookiesHeader();
+
+        headText = StrUtil.format(headText, contentType, cookiesHeader);
 
         byte[] head = headText.getBytes();
         byte[] body = response.getBody();
@@ -106,7 +112,7 @@ public class HttpProcessor {
             }
             String format = StrUtil.format(Constant.textFormat_500, message, e.toString(), stringBuffer.toString());
             format = Constant.response_head_500 + format;
-            byte[] responseBytes = format.getBytes();
+            byte[] responseBytes = format.getBytes("utf-8");
             outputStream.write(responseBytes);
         } catch (IOException ioException) {
             ioException.printStackTrace();
