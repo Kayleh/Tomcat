@@ -1,0 +1,1416 @@
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 442 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 37 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 4 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 47 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 09:10:51 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 13 ms
+06 22, 2020 09:11:18 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 247 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 12 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 09:12:52 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 10 ms
+06 22, 2020 09:12:58 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 09:15:22 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 224 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 7 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 3 ms
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 09:15:34 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 19 ms
+06 22, 2020 09:15:39 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 09:16:16 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 246 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 10 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 9 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 09:16:36 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 19 ms
+06 22, 2020 09:16:47 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 475 ms
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 57 ms
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 11:37:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 1 ms
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 5 ms
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 11:37:56 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 7 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 426 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 11 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 4 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 5 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 15:04:18 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 8 ms
+06 22, 2020 15:04:36 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@25cff50d 检测到了Web应用下的重要文件变化 HelloServlet.class 
+06 22, 2020 15:04:36 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 303 ms
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 13 ms
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 15:10:36 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 4 ms
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 5 ms
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 15:10:37 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 18 ms
+06 22, 2020 15:11:17 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@325ca47d 检测到了Web应用下的重要文件变化 HelloServlet.class 
+06 22, 2020 15:11:17 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 15:11:17 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 15:11:17 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 8 ms
+06 22, 2020 15:11:17 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 22, 2020 15:31:59 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@22d3d487 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 15:31:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 15:31:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:31:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 44 ms
+06 22, 2020 15:31:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 15:32:02 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@71d84c24 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 15:32:02 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 15:32:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:32:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 62 ms
+06 22, 2020 15:32:02 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 15:32:05 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@4615f43 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 15:32:05 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 15:32:05 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:32:05 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 99 ms
+06 22, 2020 15:32:05 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 15:32:09 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@7b0671e3 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 15:32:09 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 15:32:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:32:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 50 ms
+06 22, 2020 15:32:09 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 15:33:09 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@2176ceb7 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 15:33:09 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 15:33:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 15:33:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 58 ms
+06 22, 2020 15:33:10 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 15:52:58 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 729 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 107 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 7 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:08:59 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 11 ms
+06 22, 2020 20:09:06 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:09:06 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:09:06 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:09:47 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:11:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:11:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:11:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:13:33 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:13:33 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:13:33 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 234 ms
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 24 ms
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:13:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 6 ms
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 6 ms
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:13:42 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 24 ms
+06 22, 2020 20:13:53 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:13:53 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:13:53 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 185 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 21 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 5 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 6 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:15:09 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 12 ms
+06 22, 2020 20:15:15 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:15:15 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:15:15 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:26:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:26:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 213 ms
+06 22, 2020 20:26:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 6 ms
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 12 ms
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 7 ms
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:26:21 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 21 ms
+06 22, 2020 20:26:26 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:26:26 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:26:26 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:26:40 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:26:40 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:26:40 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ParamServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:29:19 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@15d3cc18 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 20:29:19 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 20:29:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:29:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 9 ms
+06 22, 2020 20:29:20 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 22, 2020 20:29:22 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@64a4da65 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 22, 2020 20:29:22 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 20:29:22 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:29:22 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 22, 2020 20:29:22 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 22, 2020 20:29:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:29:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:29:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:29:34 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:29:52 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:55)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:35)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: cn.how2j.javaweb.HelloServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:41)
+	... 5 more
+06 22, 2020 20:30:20 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@619a34d9 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 20:30:20 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 20:30:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:30:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 6 ms
+06 22, 2020 20:30:20 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 22, 2020 20:30:36 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 186 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 23 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 5 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 5 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 12 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:30:44 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 7 ms
+06 22, 2020 20:30:52 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:33:58 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@4fc5b6c3 检测到了Web应用下的重要文件变化 HelloServlet.class 
+06 22, 2020 20:33:58 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 22, 2020 20:33:58 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:33:58 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 8 ms
+06 22, 2020 20:33:58 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 22, 2020 20:36:23 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:37:45 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:40:01 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@23dd6b20 检测到了Web应用下的重要文件变化 web.xml 
+06 22, 2020 20:40:01 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has started
+06 22, 2020 20:40:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:40:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 56 ms
+06 22, 2020 20:40:01 下午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/j2ee] has completed
+06 22, 2020 20:40:02 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 282 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 10 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 20:40:10 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 12 ms
+06 22, 2020 20:44:04 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 170 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 29 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 20 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 21:01:49 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 20 ms
+06 22, 2020 21:01:55 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 183 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 17 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 1 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 11 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 4 ms
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 22, 2020 21:05:43 下午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 18 ms
+06 22, 2020 21:07:06 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:43)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:39)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

@@ -196,6 +196,12 @@ public class TestTomcat {
         Assert.assertEquals(html, "post name:meepo");
     }
 
+    @Test
+    public void testheader() {
+        String html = getContentString("/javaee/header");
+        Assert.assertEquals(html,"kayleh mini brower / java1.8");
+    }
+
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
     private void containAssert(String html, String string) {

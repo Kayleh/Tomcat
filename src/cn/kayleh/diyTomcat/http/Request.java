@@ -5,6 +5,8 @@ package cn.kayleh.diyTomcat.http;
  * @Date: 2020/6/10 16:10
  */
 
+import cn.hutool.core.convert.Convert;
+import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
@@ -12,11 +14,13 @@ import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
+import sun.nio.ch.IOUtil;
 
 
 import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
 import java.net.Socket;
 import java.util.*;
 
@@ -34,12 +38,16 @@ public class Request extends BaseRequest {
     //查询字符串和参数Map
     private String queryString;
     private Map<String, String[]> parameterMap;
+    //声明 headerMap用于存放头信息
+    private Map<String, String> headerMap;
 
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
         this.service = service;
 
         this.parameterMap = new HashMap<>();
+
+        this.headerMap = new HashMap<>();
 
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
@@ -59,7 +67,8 @@ public class Request extends BaseRequest {
             }
         }
         parseParameters();
-
+        parseHeaders();
+        System.out.println(headerMap);
     }
 
     //根据 get 和 post 方式分别解析参数。 需要注意的是，参数Map里存放的值是 字符串数组类型
@@ -102,6 +111,24 @@ public class Request extends BaseRequest {
     @Override
     public String getMethod() {
         return method;
+    }
+
+
+    public void parseHeaders() {
+        StringReader stringReader = new StringReader(requestString);
+        List<String> lines = new ArrayList<>();
+        IoUtil.readLines(stringReader, lines);
+        //！！跳过了第一行的请求体
+        for (int i = 1; i < lines.size(); i++) {
+            String line = lines.get(i);
+            if (0 == line.length()) {
+                break;
+            }
+            String[] segs = line.split(":");
+            String headName = segs[0].toLowerCase();
+            String headValue = segs[1];
+            headerMap.put(headName, headValue);
+        }
     }
 
     //提供解析方法，其实就是取第一个空格之前的数据。
@@ -160,6 +187,27 @@ public class Request extends BaseRequest {
         if (null != values && 0 != values.length)
             return values[0];
         return null;
+    }
+
+    @Override
+    public String getHeader(String name) {
+        if (null == name) {
+            return null;
+        }
+        name = name.toLowerCase();
+        return headerMap.get(name);
+    }
+
+    @Override
+    public Enumeration<String> getHeaderNames() {
+        Set keys = headerMap.keySet();
+        return Collections.enumeration(keys);
+    }
+
+    @Override
+    public int getIntHeader(String name) {
+        String value = headerMap.get(name);
+        return Convert.toInt(value, 0);
     }
 
     @Override
