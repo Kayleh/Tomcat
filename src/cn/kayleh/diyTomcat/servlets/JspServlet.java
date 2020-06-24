@@ -3,6 +3,7 @@ package cn.kayleh.diyTomcat.servlets;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.kayleh.diyTomcat.catalina.Context;
+import cn.kayleh.diyTomcat.classloader.JspClassLoader;
 import cn.kayleh.diyTomcat.http.Request;
 import cn.kayleh.diyTomcat.http.Response;
 import cn.kayleh.diyTomcat.util.Constant;
@@ -65,15 +66,29 @@ public class JspServlet extends HttpServlet {
                     //如果存在，再看看最后修改时间与 jsp 文件的最后修改时间 谁早谁晚。
                     JspUtil.compileJsp(context, jspFile);
                 } else if (jspFile.lastModified() > jspServletClassFile.lastModified()) {
+                    //当发现 jsp 更新之后，就会调用 invalidJspClassLoader 是指与之前的 JspClassLoader 脱钩。
                     JspUtil.compileJsp(context, jspFile);
+                    JspClassLoader.invalidJspClassLoader(uri, context);
                 }
 
                 String extName = FileUtil.extName(file);
                 String mimeType = WebXMLUtil.getMimeType(extName);
                 response.setContentType(mimeType);
 
-                byte[] bytes = FileUtil.readBytes(file);
-                response.setBody(bytes);
+                //根据uri 和 context 获取当前jsp 对应的 JspClassLoader
+                //获取 jsp 对应的 servlet Class Name
+                //通过 JspClassLoader 根据 servlet Class Name 加载类对象：jspServletClass
+                JspClassLoader jspClassLoader = JspClassLoader.getJspClassLoader(uri, context);
+                String jspServletClassName = JspUtil.getJspServletClassName(uri, subFolder);
+                Class jspServletClass = jspClassLoader.loadClass(jspServletClassName);
+
+                //使用 context 现成的用于进行单例管理的 getServlet 方法获取 servlet 实例，
+                // 然后调用其 service 方法。 最后设置 状态码为200.
+                HttpServlet servlet = context.getServlet(jspServletClass);
+                servlet.service(request, response);
+
+//                byte[] bytes = FileUtil.readBytes(file);
+//                response.setBody(bytes);
                 response.setStatus(Constant.CODE_200);
 
             } else {

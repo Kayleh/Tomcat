@@ -38,7 +38,7 @@ public class InvokerServlet extends HttpServlet {
         String servletClassName = context.getServletClassName(uri);
 
         try {
-            Class servletClass = context.getWebappClassLoader().loadClass(servletClassName);
+            Class servletClass = context.getWebClassLoader().loadClass(servletClassName);
 //            System.out.println("servletClass:" + servletClass);
 //            System.out.println("servletClass'classLoader:" + servletClass.getClassLoader());
 

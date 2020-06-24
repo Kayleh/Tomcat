@@ -11,6 +11,8 @@ import cn.kayleh.diyTomcat.http.ApplicationContext;
 import cn.kayleh.diyTomcat.http.StandardServletConfig;
 import cn.kayleh.diyTomcat.util.ContextXMLUtil;
 import cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher;
+import org.apache.jasper.JspC;
+import org.apache.jasper.compiler.JspRuntimeContext;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -190,17 +192,22 @@ public class Context {
      * 创建一个 Deploy 方法， 调用 init, 并打印日志
      */
     private void deploy() {
-        TimeInterval timeInterval = DateUtil.timer();
         init();
         //在deploy 方法中初始化contextFileChangeWatcher ，并启动
 
         if (reloadable) {
-            //     bug ↓
-//            ContextFileChangeWatcher contextFileChangeWatcher = new ContextFileChangeWatcher(this);
             contextFileChangeWatcher = new ContextFileChangeWatcher(this);
             contextFileChangeWatcher.start();
 //            LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
         }
+        //这里进行了JspRuntimeContext 的初始化，
+        // 就是为了能够在jsp所转换的 java 文件里的 javax.servlet.jsp.JspFactory.getDefaultFactory() 这行能够有返回值
+        JspC c = new JspC();
+        if (!contextWebXmlFile.exists())
+            return;
+        new JspRuntimeContext(servletContext, c);
+
+
     }
 
 
@@ -286,6 +293,7 @@ public class Context {
         checkDuplicated(document, "servlet servlet-class", "servlet 类名重复,请保持其唯一性:{} ");
     }
 
+
     public ServletContext getServletContext() {
         return servletContext;
     }
@@ -299,7 +307,7 @@ public class Context {
     }
 
     //一个Web应用，应该有一个自己独立的 WebappClassLoader ， 所以在Context 里加上 webappClassLoader 属性，以及一个getter
-    public WebappClassLoader getWebappClassLoader() {
+    public WebappClassLoader getWebClassLoader() {
         return webappClassLoader;
     }
 
