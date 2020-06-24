@@ -210,7 +210,7 @@ public class TestTomcat {
     @Test
     public void testsetCookie() {
         String html = getHttpString("/javaee/setCookie");
-        containAssert(html,"Set-Cookie: name=Gareen(cookie); Expires=");
+        containAssert(html, "Set-Cookie: name=Gareen(cookie); Expires=");
     }
 
     @Test
@@ -224,6 +224,27 @@ public class TestTomcat {
         String html = IoUtil.read(is, "utf-8");
         containAssert(html, "name:Gareen(cookie)");
     }
+
+    //先通过访问 setSession，设置 name_in_session, 并且得到 jsessionid,
+    //然后 把 jsessionid 作为 Cookie 的值提交到 getSession，就获取了session 中的数据了。
+    @Test
+    public void testSession() throws IOException {
+        String jsessionid = getContentString("/javaee/setSession");
+        if (null != jsessionid)
+            jsessionid = jsessionid.trim();
+        String url = StrUtil.format("http://{}:{}{}", ip, port, "/javaee/getSession");
+        URL u = new URL(url);
+        HttpURLConnection conn = (HttpURLConnection) u.openConnection();
+        conn.setRequestProperty("Cookie", "JSESSIONID=" + jsessionid);
+        conn.connect();
+        InputStream is = conn.getInputStream();
+        String html = IoUtil.read(is, "utf-8");
+        containAssert(html, "Gareen(session)");
+    }
+
+
+
+
 
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言

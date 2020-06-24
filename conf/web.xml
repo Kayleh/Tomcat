@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--tomcat 关于文件的默认配置其实都是放在这里的-->
 <web-app>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
     <mime-mapping>
         <extension>123</extension>
         <mime-type>application/vnd.lotus-1-2-3</mime-type>

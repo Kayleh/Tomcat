@@ -1,6 +1,5 @@
 package cn.kayleh.diyTomcat.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -19,7 +18,7 @@ public class CustomizedURLClassLoader extends URLClassLoader {
         URL[] urls = new URL[]{url};
         CustomizedURLClassLoader loader = new CustomizedURLClassLoader(urls);
 
-        Class<?> kaylehClass = loader.loadClass("cn.kayleh.diyTomcat.test.HOW2J");
+        Class<?> kaylehClass = loader.loadClass("cn.kayleh.diyTomcat.test.Kayleh");
         Object o = kaylehClass.newInstance();
         Method m = kaylehClass.getMethod("hello");
         m.invoke(o);

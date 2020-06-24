@@ -19,6 +19,7 @@ import sun.nio.ch.IOUtil;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -38,7 +39,6 @@ public class Request extends BaseRequest {
 
     private String method;
 
-
     //查询字符串和参数Map
     private String queryString;
     private Map<String, String[]> parameterMap;
@@ -46,6 +46,8 @@ public class Request extends BaseRequest {
     private Map<String, String> headerMap;
 
     private Cookie[] cookies;
+
+    private HttpSession session;
 
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
@@ -75,6 +77,18 @@ public class Request extends BaseRequest {
         parseParameters();
         parseHeaders();
         parseCookies();
+    }
+
+    //从 cookie 中获取sessionid
+    public String getJSessionIdFromCookie() {
+        if (null == cookies)
+            return null;
+        for (Cookie cookie : cookies) {
+            if ("JSESSIONID".equals(cookie.getName())) {
+                return cookie.getValue();
+            }
+        }
+        return null;
     }
 
     //从 http 请求协议中解析出 Cookie
@@ -134,6 +148,14 @@ public class Request extends BaseRequest {
         }
     }
 
+    @Override
+    public HttpSession getSession() {
+        return session;
+    }
+
+    public void setSession(HttpSession session) {
+        this.session = session;
+    }
 
     @Override
     public String getMethod() {

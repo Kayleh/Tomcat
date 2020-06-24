@@ -8,8 +8,10 @@ import cn.kayleh.diyTomcat.servlets.InvokerServlet;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.http.Request;
 import cn.kayleh.diyTomcat.http.Response;
+import cn.kayleh.diyTomcat.util.SessionManager;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -27,6 +29,9 @@ public class HttpProcessor {
             if (null == uri) {
                 return;
             }
+
+            prepareSession(request, response);
+
             Context context = request.getContext();
 
             String servletClassName = context.getServletClassName(uri);
@@ -117,5 +122,11 @@ public class HttpProcessor {
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
+    }
+
+    public void prepareSession(Request request, Response response) {
+        String jSessionId = request.getJSessionIdFromCookie();
+        HttpSession session = SessionManager.getSession(jSessionId, request, response);
+        request.setSession(session);
     }
 }
