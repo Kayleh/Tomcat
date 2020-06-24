@@ -20,6 +20,10 @@ import static cn.kayleh.diyTomcat.util.Constant.webXmlFile;
 public class WebXMLUtil {
     private static Map<String, String> mimeTypeMapping = new HashMap<>();
 
+    /**
+     * @param extName 文件扩展名
+     * @return
+     */
     public static synchronized String getMimeType(String extName) {
         if (mimeTypeMapping.isEmpty()) {
             initMimeType();

@@ -251,6 +251,12 @@ public class TestTomcat {
         Assert.assertEquals(html, "Hello DIY Tomcat from Kayleh.cn");
     }
 
+    @Test
+    public void testJsp() {
+        String html = getContentString("/javaee/");
+        Assert.assertEquals(html, "hello jsp@javaweb");
+    }
+
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
     private void containAssert(String html, String string) {

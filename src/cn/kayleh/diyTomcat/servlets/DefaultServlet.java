@@ -49,6 +49,12 @@ public class DefaultServlet {
         if ("/".equals(uri))
             uri = WebXMLUtil.getWelcomeFile(request.getContext());
 
+        if (uri.endsWith(".jsp")) {
+            JspServlet.getInstance().service(request, response);
+            return;
+        }
+
+
         //如果访问的是a.html ，
         // URI地址为/a.html ,
         // fileName为 a.html
