@@ -10,12 +10,11 @@ import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
+import cn.kayleh.diyTomcat.catalina.Connector;
 import cn.kayleh.diyTomcat.catalina.Context;
 import cn.kayleh.diyTomcat.catalina.Engine;
 import cn.kayleh.diyTomcat.catalina.Service;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
-import sun.nio.ch.IOUtil;
-
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
@@ -25,7 +24,6 @@ import java.io.InputStream;
 import java.io.StringReader;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.net.SocketAddress;
 import java.util.*;
 
 public class Request extends BaseRequest {
@@ -35,7 +33,7 @@ public class Request extends BaseRequest {
     private Socket socket;
 
     private Context context;
-    private Service service;
+//    private Service service;
 
     private String method;
 
@@ -49,14 +47,16 @@ public class Request extends BaseRequest {
 
     private HttpSession session;
 
-    public Request(Socket socket, Service service) throws IOException {
+    private Connector connector;
+
+    public Request(Socket socket, Connector connector) throws IOException {
         this.socket = socket;
-        this.service = service;
 
         this.parameterMap = new HashMap<>();
 
         this.headerMap = new HashMap<>();
 
+        this.connector = connector;
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
             return;
@@ -188,6 +188,7 @@ public class Request extends BaseRequest {
     //解析Context 的方法， 通过获取uri 中的信息来得到 path. 然后根据这个 path 来获取 Context 对象。
     // 如果获取不到，比如 /b/a.html, 对应的 path 是 /b, 是没有对应 Context 的，那么就获取 "/” 对应的 ROOT Context。
     private void parseContext() {
+        Service service = connector.getService();
         Engine engine = service.getEngine();
         context = engine.getDefaultHost().getContext(uri);
         if (null != context) {
@@ -228,6 +229,10 @@ public class Request extends BaseRequest {
         }
         temp = StrUtil.subBefore(temp, '?', false);
         uri = temp;
+    }
+
+    public Connector getConnector() {
+        return connector;
     }
 
     @Override

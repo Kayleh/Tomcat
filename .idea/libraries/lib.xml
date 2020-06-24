@@ -6,7 +6,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/hutool-all-4.3.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/hutool-all-4.3.1.jar!/cn/hutool/core/util" />
     </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
   </library>

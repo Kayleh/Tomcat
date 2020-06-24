@@ -17,9 +17,13 @@ public class Constant {
     public static final int CODE_500 = 500;
 
 
-    public static final String response_head_202 =
+    public static final String response_head_200 =
             "HTTP/1.1 200 OK\r\n" +
                     "Content-Type: {}{}" +
+                    "\r\n\r\n";
+    public static final String response_head_200_gzip =
+            "HTTP/1.1 200 OK\r\nContent-Type: {}{}\r\n" +
+                    "Content-Encoding:gzip" +
                     "\r\n\r\n";
 
     //增加一个 404 的头信息，它会返回 404 代码已经 Not Found 字符串

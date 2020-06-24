@@ -6,6 +6,7 @@ import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.ZipUtil;
 import cn.hutool.http.HttpUtil;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.InternalException;
@@ -242,9 +243,13 @@ public class TestTomcat {
         containAssert(html, "Gareen(session)");
     }
 
-
-
-
+    @Test
+    public void testGzip() {
+        byte[] gzipContent = getContentBytes("/", true);
+        byte[] unGzipContent = ZipUtil.unGzip(gzipContent);
+        String html = new String(unGzipContent);
+        Assert.assertEquals(html, "Hello DIY Tomcat from Kayleh.cn");
+    }
 
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
@@ -273,7 +278,7 @@ public class TestTomcat {
 
     private byte[] getContentBytes(String uri, boolean gzip) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
-        return MiniBrowser.getContentBytes(url, false);
+        return MiniBrowser.getContentBytes(url, gzip);
     }
 
 

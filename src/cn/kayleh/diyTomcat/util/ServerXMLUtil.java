@@ -17,6 +17,7 @@ import java.util.List;
  */
 public class ServerXMLUtil {
 
+
     //getContexts 方法，传如 Host 参数， 创建 Context 对象的时候带上 host 和 reloadable 参数。
     public static List<Context> getContexts(Host host) {
         List<Context> result = new ArrayList<>();
@@ -31,8 +32,8 @@ public class ServerXMLUtil {
         for (Element element : elements) {
             String path = element.attr("path");
             String docBase = element.attr("docBase");
-            boolean reloadable = Convert.toBool(element.attr("reloadable"),true);
-            Context context = new Context(path, docBase,host,reloadable);
+            boolean reloadable = Convert.toBool(element.attr("reloadable"), true);
+            Context context = new Context(path, docBase, host, reloadable);
             result.add(context);
         }
         return result;
@@ -78,8 +79,17 @@ public class ServerXMLUtil {
         Elements elements = document.select("Connector");
         for (Element element : elements) {
             int port = Convert.toInt(element.attr("port"));
+            String compression = element.attr("compression");
+            int compressionMinSize = Convert.toInt(element.attr("compressionMinSize"), 0);
+            String noCompressionUserAgents = element.attr("noCompressionUserAgents");
+            String compressableMimeType = element.attr("compressableMimeType");
             Connector connector = new Connector(service);
             connector.setPort(port);
+            connector.setCompression(compression);
+            connector.setCompressableMimeType(compressableMimeType);
+            connector.setNoCompressionUserAgents(noCompressionUserAgents);
+            connector.setCompressableMimeType(compressableMimeType);
+            connector.setCompressionMinSize(compressionMinSize);
             result.add(connector);
         }
         return result;

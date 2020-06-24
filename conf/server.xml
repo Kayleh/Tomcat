@@ -4,7 +4,17 @@
     <!--Service 是 Engine 的父节点，用于代表 tomcat 提供的服务。它里面会有很多Connector对象-->
     <Service name="Catalina">
         <!--可以支持多个端口-->
-        <Connector port="8888"/>
+        <!--compression 表示是否启动，当等于 "on" 的时候，表示启动
+            compressionMinSize 表示最小进行压缩的字节数，太小就没有必要压缩了，一般是 1024. 但是这里为了看到效果，故意设置成20，否则就看不到现象了。
+            noCompressionUserAgents： 这表示不进行压缩的浏览器
+            compressableMimeType： 这表示哪些 mimeType 才需要进行压缩
+        -->
+        <Connector port="8888"
+                   compression="on"
+                   compressionMinSize="20"
+                   noCompressionUserAgents="gozilla,traviata"
+                   compressableMimeType="text/html,text/xml,text/javascript,application/javascript,text/css,text/plain,text/json"
+        />
         <Connector port="7777"/>
         <Connector port="6666"/>
         <Engine defaultHost="localhost">

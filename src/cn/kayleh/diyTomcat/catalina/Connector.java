@@ -29,6 +29,12 @@ public class Connector implements Runnable {
         this.port = port;
     }
 
+    private String compression;
+    private int compressionMinSize;
+    private String noCompressionUserAgents;
+    private String CompressableMimeType;
+
+
     @Override
     public void run() {
         try {
@@ -42,7 +48,7 @@ public class Connector implements Runnable {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(accept, service);
+                            Request request = new Request(accept, Connector.this);
                             Response response = new Response();
                             HttpProcessor httpProcessor = new HttpProcessor();
                             httpProcessor.execute(accept, request, response);
@@ -75,4 +81,36 @@ public class Connector implements Runnable {
         new Thread(this).start();
     }
 
+
+    public String getCompression() {
+        return compression;
+    }
+
+    public void setCompression(String compression) {
+        this.compression = compression;
+    }
+
+    public int getCompressionMinSize() {
+        return compressionMinSize;
+    }
+
+    public void setCompressionMinSize(int compressionMinSize) {
+        this.compressionMinSize = compressionMinSize;
+    }
+
+    public String getNoCompressionUserAgents() {
+        return noCompressionUserAgents;
+    }
+
+    public void setNoCompressionUserAgents(String noCompressionUserAgents) {
+        this.noCompressionUserAgents = noCompressionUserAgents;
+    }
+
+    public String getCompressableMimeType() {
+        return CompressableMimeType;
+    }
+
+    public void setCompressableMimeType(String compressableMimeType) {
+        this.CompressableMimeType = compressableMimeType;
+    }
 }

@@ -11,6 +11,8 @@ import java.lang.reflect.Method;
  */
 public class Bootstrap {
     public static void main(String[] args) throws Exception {
+
+
 //        Server server = new Server();
 //        server.start();
         //  类加载器
@@ -34,6 +36,16 @@ public class Bootstrap {
         System.out.println(serverClazz.getClassLoader());
 
         // 不能关闭，否则后续就不能使用
-        // commonClassLoader.close();
+        // commonClassLoader.close()
+
+
+        System.out.println("   _   _                _             _");
+        System.out.println("  | | / /              | |           | |");
+        System.out.println("  | |/ /  ____  _    _ | |  ___  ____| |");
+        System.out.println("  | | <  /  _  \\\\ \\ / /| | / _ \\(  __` |");
+        System.out.println("  | |\\ \\ | (_| | \\ V / | ||  __/| |  | |");
+        System.out.println("  |_| \\_\\\\___,_|  \\ /  |_| \\___||_|  |_|");
+        System.out.println("                 /_/");
+
     }
 }
