@@ -257,6 +257,14 @@ public class TestTomcat {
         Assert.assertEquals(html, "hello jsp@javaweb");
     }
 
+    @Test
+    public void testClientJump() {
+        String http_servlet = getHttpString("/javaee/jump1");
+        containAssert(http_servlet, "HTTP/1.1 302 Found");
+        String http_jsp = getHttpString("/javaee/jump1.jsp");
+        containAssert(http_jsp, "HTTP/1.1 302 Found");
+    }
+
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
     private void containAssert(String html, String string) {

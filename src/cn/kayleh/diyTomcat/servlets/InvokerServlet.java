@@ -28,8 +28,7 @@ public class InvokerServlet extends HttpServlet {
     private InvokerServlet() {
     }
 
-    public void service(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse)
-            throws IOException, ServletException {
+    public void service(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         Request request = (Request) httpServletRequest;
         Response response = (Response) httpServletResponse;
 
@@ -48,8 +47,12 @@ public class InvokerServlet extends HttpServlet {
 
             ReflectUtil.invoke(servletObject, "service", request, response);
 
-            //表示处理成功了
-            response.setStatus(Constant.CODE_200);
+            if (null != response.getRedirectPath())
+                //如果 获取getRedirectPath有值
+                response.setStatus(Constant.CODE_302);
+            else
+                //表示处理成功了
+                response.setStatus(Constant.CODE_200);
 
         } catch (Exception e) {
             throw new RuntimeException(e);

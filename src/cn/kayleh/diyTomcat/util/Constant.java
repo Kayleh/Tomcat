@@ -26,6 +26,9 @@ public class Constant {
                     "Content-Encoding:gzip" +
                     "\r\n\r\n";
 
+    public static final String response_head_302 =
+            "HTTP/1.1 302 Found\r\nLocation:{}\r\n\r\n";
+
     //增加一个 404 的头信息，它会返回 404 代码已经 Not Found 字符串
     public static final String response_head_404 =
             "HTTP/1.1 404 Not Found\r\n" + "Content-Type:text/html\r\n\r\n";
@@ -75,5 +78,5 @@ public class Constant {
 
     public static final File contextXmlFile = new File(confFolder, "context.xml");
 
-    public static final String workFolder = SystemUtil.get("user.dir")+File.separator+"work";
+    public static final String workFolder = SystemUtil.get("user.dir") + File.separator + "work";
 }
