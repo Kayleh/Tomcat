@@ -1,5 +1,8 @@
 package cn.kayleh.diyTomcat.catalina;
 
+import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.util.RuntimeUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ServerXMLUtil;
@@ -27,7 +30,66 @@ public class Host {
 
         scanContextsOnWebAppsFolder();
         scanContextsInServerXML();
+        scanWarOnWebAppsFolder();
 
+    }
+
+
+    //把 war 文件解压为目录，并把文件夹加载为 Context
+    public void loadWar(File warFile) {
+        String fileName = warFile.getName();
+        String folderName = StrUtil.subBefore(fileName, ".", true);
+        //看看是否已经有对应的Context了
+        Context context = getContext("/" + folderName);
+        if (null != context)
+            return;
+        //先看是否已经有对应的文件夹
+        File folder = new File(Constant.webappsFolder, folderName);
+        if (folder.exists())
+            return;
+        //移动war文件，因为jar命令只支持解压当前目录下
+        File tempWarFile = FileUtil.file(Constant.webappsFolder, folderName, fileName);
+        File contextFolder = tempWarFile.getParentFile();
+        contextFolder.mkdir();
+        FileUtil.copyFile(warFile, tempWarFile);
+        //解压
+        String command = "jar xvf " + fileName;
+        Process process = RuntimeUtil.exec(null, contextFolder, command);
+        try {
+            process.waitFor();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //解压之后删除临时war
+        tempWarFile.delete();
+        //然后创建新的Context
+        load(contextFolder);
+
+    }
+
+    //把一个文件夹加载为Context
+    public void load(File folder) {
+        String path = folder.getName();
+        if ("ROOT".equals(path))
+            path = "/";
+        else
+            path = "/" + path;
+
+        String docBase = folder.getAbsolutePath();
+        Context context = new Context(path, docBase, this, false);
+        contextMap.put(context.getPath(), context);
+    }
+
+    //扫描webapps 目录，处理所有的 war 文件
+    private void scanWarOnWebAppsFolder() {
+        File folder = FileUtil.file(Constant.webappsFolder);
+        File[] files = folder.listFiles();
+        for (File file : files) {
+            if (!file.getName().toLowerCase().endsWith(".war")) {
+                continue;
+            }
+            loadWar(file);
+        }
     }
 
     //创建scanContextsInServerXML， 通过 ServerXMLUtil 获取 context, 放进 contextMap里。
