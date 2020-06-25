@@ -47,6 +47,10 @@ public class HttpProcessor {
             } else {
                 DefaultServlet.getInstance().service(request, response);
             }
+            //如果发现请求是 forwarded 的，后续就不处理了,
+            //否则会调用多次 handle200, 导致已经关闭的 socket 被使用就会抛出异常。
+            if (request.isForwarded())
+                return;
 
             if (Constant.CODE_200 == response.getStatus()) {
                 handle200(acept, request, response);

@@ -49,25 +49,25 @@ public class Request extends BaseRequest {
 
     private Connector connector;
 
+    private boolean forwarded;
+
+    private Map<String, Object> attributesMap;
+
     public Request(Socket socket, Connector connector) throws IOException {
         this.socket = socket;
-
         this.parameterMap = new HashMap<>();
-
         this.headerMap = new HashMap<>();
-
         this.connector = connector;
+        this.attributesMap = new HashMap<>();
+
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString))
             return;
         parseUri();
-
         //在构造方法中调用 parseContext(), 倘若当前 Context 的路径不是 "/", 那么要对 uri进行修正，
         // 比如 uri 是 /a/index.html， 获取出来的 Context路径不是 "/”， 那么要修正 uri 为 /index.html。
         parseContext();
-
         parseMethod();
-
         if (!"/".equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
             if (StrUtil.isEmpty(uri)) {
@@ -146,6 +146,48 @@ public class Request extends BaseRequest {
                 }
             }
         }
+    }
+
+    @Override
+    public Object getAttribute(String name) {
+        return attributesMap.get(name);
+    }
+
+    @Override
+    public Enumeration<String> getAttributeNames() {
+        Set<String> key = attributesMap.keySet();
+        return Collections.enumeration(key);
+    }
+
+    @Override
+    public void setAttribute(String name, Object value) {
+        attributesMap.put(name, value);
+    }
+
+    @Override
+    public void removeAttribute(String name) {
+        attributesMap.remove(name);
+    }
+
+    //返回 ApplicationRequestDispatcher 对象
+    public ApplicationRequestDispatcher getRequestDispatcher(String uri) {
+        return new ApplicationRequestDispatcher(uri);
+    }
+
+    public Socket getSocket() {
+        return socket;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    public boolean isForwarded() {
+        return forwarded;
+    }
+
+    public void setForwarded(boolean forwarded) {
+        this.forwarded = forwarded;
     }
 
     @Override

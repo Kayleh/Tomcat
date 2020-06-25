@@ -265,6 +265,21 @@ public class TestTomcat {
         containAssert(http_jsp, "HTTP/1.1 302 Found");
     }
 
+    @Test
+    public void testServerJump() {
+        String http_servlet = getHttpString("/javaee/jump2");
+        containAssert(http_servlet, "Hello DIY Tomcat from HelloServlet");
+    }
+
+    @Test
+    public void testServerJumpWithAttributes() {
+        String http_servlet = getHttpString("/javaee/jump2");
+        containAssert(http_servlet, "Hello DIY Tomcat from HelloServlet@javaweb, the name is gareen");
+    }
+
+
+
+
 
     //增加一个 containAssert 断言，来判断html 里是否包含某段字符串的断言
     private void containAssert(String html, String string) {
