@@ -10,6 +10,7 @@ import cn.kayleh.diyTomcat.http.Request;
 import cn.kayleh.diyTomcat.http.Response;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -19,7 +20,7 @@ import java.io.IOException;
  * @Author: Wizard
  * @Date: 2020/6/20 13:12
  */
-public class DefaultServlet {
+public class DefaultServlet extends HttpServlet {
     private static DefaultServlet instance = new DefaultServlet();
 
     public static synchronized DefaultServlet getInstance() {

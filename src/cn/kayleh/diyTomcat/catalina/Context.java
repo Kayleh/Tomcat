@@ -70,7 +70,7 @@ public class Context {
     private ServletContext servletContext;
 
     private Map<Class<?>, HttpServlet> servletPool;
-    private final HashMap<String, Filter> filterPool;
+    private final Map<String, Filter> filterPool;
 
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
@@ -113,6 +113,51 @@ public class Context {
         deploy();
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
+
+
+    //获取匹配了的过滤器的集合
+    public List<Filter> getMatchedFilters(String uri) {
+        List<Filter> filters = new ArrayList<>();
+        Set<String> patterns = url_filterClassName.keySet();
+        Set<String> matchedPatterns = new HashSet<>();
+        for (String pattern : patterns) {
+            if (match(pattern, uri)) {
+                matchedPatterns.add(pattern);
+            }
+        }
+        Set<String> matchedFilterClassNames = new HashSet<>();
+        for (String pattern : matchedPatterns) {
+            List<String> filterClassName = url_filterClassName.get(pattern);
+            matchedFilterClassNames.addAll(filterClassName);
+
+        }
+        for (String filterClassName : matchedFilterClassNames) {
+            Filter filter = filterPool.get(filterClassName);
+            filters.add(filter);
+        }
+        return filters;
+    }
+
+
+    //三种匹配模式
+    private boolean match(String pattern, String uri) {
+        //  完全匹配
+        if (StrUtil.equals(pattern, uri))
+            return true;
+        //  /*通配符匹配
+        if (StrUtil.equals(pattern, "/*"))
+            return true;
+        //  后缀名匹配 /*.jsp
+        if (StrUtil.startWith(pattern, "/*.")) {
+            String patternExtName = StrUtil.subAfter(pattern, '.', false);
+            String uriExtName = StrUtil.subAfter(uri, '.', false);
+            if (StrUtil.equals(patternExtName, uriExtName))
+                return true;
+        }
+        //其他模式先不管
+        return false;
+    }
+
 
     //提供 parseFilterMapping 方法，解析 web.xml 里面的 Filter 信息
     private void parseFilterMapping(Document document) {

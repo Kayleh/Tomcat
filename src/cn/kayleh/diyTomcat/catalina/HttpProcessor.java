@@ -11,11 +11,15 @@ import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.http.Request;
 import cn.kayleh.diyTomcat.http.Response;
 import cn.kayleh.diyTomcat.util.SessionManager;
+import org.apache.tools.ant.taskdefs.condition.Http;
 
+import javax.servlet.Filter;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.List;
 
 /**
  * @Author: Wizard
@@ -29,24 +33,34 @@ public class HttpProcessor {
             if (null == uri) {
                 return;
             }
-
             prepareSession(request, response);
 
             Context context = request.getContext();
-
             String servletClassName = context.getServletClassName(uri);
+            HttpServlet workingServlet;
+            if (null != servletClassName)
+                workingServlet = InvokerServlet.getInstance();
+            else if (uri.endsWith(".jsp"))
+                workingServlet = JspServlet.getInstance();
+            else
+                workingServlet = DefaultServlet.getInstance();
 
-            //通过 context 获取 servletClassName， 如果是空就表示不是访问的 servlet。
-            //通过类名 servletClassName 实例化 servlet 对象，然后调用其 doGet 方法。
-            if (null != servletClassName) {
-                InvokerServlet.getInstance().service(request, response);
-//                Object servletObject = ReflectUtil.newInstance(servletClassName);
-//                ReflectUtil.invoke(servletObject, "doGet", request, response);
-            } else if (uri.endsWith(".jsp")) {
-                JspServlet.getInstance().service(request, response);
-            } else {
-                DefaultServlet.getInstance().service(request, response);
-            }
+            List<Filter> filters = request.getContext().getMatchedFilters(request.getRequestURI());
+            ApplicationFilterChain filterChain = new ApplicationFilterChain(filters, workingServlet);
+            //service方法现在在doFilter里调用
+            filterChain.doFilter(request, response);
+
+//            //通过 context 获取 servletClassName， 如果是空就表示不是访问的 servlet。
+//            //通过类名 servletClassName 实例化 servlet 对象，然后调用其 doGet 方法。
+//            if (null != servletClassName) {
+//                InvokerServlet.getInstance().service(request, response);
+////                Object servletObject = ReflectUtil.newInstance(servletClassName);
+////                ReflectUtil.invoke(servletObject, "doGet", request, response);
+//            } else if (uri.endsWith(".jsp")) {
+//                JspServlet.getInstance().service(request, response);
+//            } else {
+//                DefaultServlet.getInstance().service(request, response);
+//            }
             //如果发现请求是 forwarded 的，后续就不处理了,
             //否则会调用多次 handle200, 导致已经关闭的 socket 被使用就会抛出异常。
             if (request.isForwarded())
