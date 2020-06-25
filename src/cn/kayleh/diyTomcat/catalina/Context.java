@@ -3,6 +3,7 @@ package cn.kayleh.diyTomcat.catalina;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.classloader.WebappClassLoader;
@@ -18,13 +19,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import javax.print.Doc;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 /**
@@ -58,6 +55,12 @@ public class Context {
     // 声明 servlet_className_init_params 用于存放初始化信息
     private Map<String, Map<String, String>> servlet_className_init_params;
 
+    private Map<String, List<String>> url_filterClassName;
+    private Map<String, List<String>> url_FilterNames;
+    private Map<String, String> filterName_className;
+    private Map<String, String> className_filterName;
+    private Map<String, Map<String, String>> filter_className_init_params;
+
     private WebappClassLoader webappClassLoader;
 
     private Host host;
@@ -67,6 +70,7 @@ public class Context {
     private ServletContext servletContext;
 
     private Map<Class<?>, HttpServlet> servletPool;
+    private final HashMap<String, Filter> filterPool;
 
     /**
      * 在构造方法中初始化前面定义的属性，并且调用 deploy 方法。
@@ -76,25 +80,25 @@ public class Context {
      */
     public Context(String path, String docBase, Host host, boolean reloadable) {
         TimeInterval timeInterval = DateUtil.timer();
-
         this.host = host;
         this.reloadable = reloadable;
-
         this.path = path;
         this.docBase = docBase;
         this.contextWebXmlFile = new File(docBase, ContextXMLUtil.getWatchedResource());
-
         this.url_serveltClassName = new HashMap<>();
         this.url_serveltName = new HashMap<>();
         this.ServeltName_ClassName = new HashMap<>();
         this.ClassName_serveltName = new HashMap<>();
+
+        this.url_filterClassName = new HashMap<>();
+        this.url_FilterNames = new HashMap<>();
+        this.filterName_className = new HashMap<>();
+        this.className_filterName = new HashMap<>();
+        this.filter_className_init_params = new HashMap<>();
+
         this.loadOnStartupServletClassNames = new ArrayList<>();
-
         this.servlet_className_init_params = new HashMap<>();
-
         this.servletContext = new ApplicationContext(this);
-
-        this.servletPool = new HashMap<>();
 
         //在构造方法中初始化它，这里的 Thread.currentThread().getContextClassLoader() 就可以获取到 Bootstrap
         // 里通过 Thread.currentThread().setContextClassLoader(commonClassLoader); 设置的 commonClassLoader.
@@ -102,10 +106,86 @@ public class Context {
         ClassLoader commonClassLoader = Thread.currentThread().getContextClassLoader();
         this.webappClassLoader = new WebappClassLoader(docBase, commonClassLoader);
 
+        this.servletPool = new HashMap<>();
+        this.filterPool = new HashMap<>();
+
         LogFactory.get().info("Deploying web application directory {}", this.docBase);
         deploy();
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
+
+    //提供 parseFilterMapping 方法，解析 web.xml 里面的 Filter 信息
+    private void parseFilterMapping(Document document) {
+
+        //  filter_url_name
+        // 过滤器的路径
+        Elements mappingurlElements = document.select("filter-mapping url-pattern");
+        for (Element mappingurlElement : mappingurlElements) {
+            //每个过滤器的路径
+            String urlPattern = mappingurlElement.text();
+            //每个过滤器的名字
+            String filterName = mappingurlElement.parent().select("filter-name").first().text();
+
+            List<String> filterNames = url_FilterNames.get(urlPattern);
+            if (null == filterNames) {
+                filterNames = new ArrayList<>();
+                url_FilterNames.put(urlPattern, filterNames);
+            }
+            filterNames.add(filterName);
+        }
+
+        // class_name_filter_name
+        Elements filterNameElements = document.select("filter filter-name");
+        for (Element filterNameElement : filterNameElements) {
+            String filterName = filterNameElement.text();
+            String filterClass = filterNameElement.parent().select("filter-class").first().text();
+            filterName_className.put(filterName, filterClass);
+            className_filterName.put(filterClass, filterName);
+        }
+
+        // url_filterClassName
+        Set<String> urls = url_FilterNames.keySet();//这是每个filter的url的集合
+        for (String url : urls) {
+            //根据url获取 filter 的集合
+            List<String> filterNames = url_FilterNames.get(url);
+            if (null == filterNames) {
+                filterNames = new ArrayList<>();
+                url_FilterNames.put(url, filterNames);
+            }
+            for (String filterName : filterNames) {
+                //根据filter的名字获取 filterClass的名字
+                String filterClassName = filterName_className.get(filterName);
+                List<String> filterClassNames = url_filterClassName.get(url);
+                if (null == filterClassNames) {
+                    filterClassNames = new ArrayList<>();
+                    url_filterClassName.put(url, filterClassNames);
+                }
+                filterClassNames.add(filterClassName);
+            }
+        }
+    }
+
+    //提供 parseFilterInitParams 方法用于解析参数信息
+    private void parseFilterInitParams(Document document) {
+        Elements filterClassNameElements = document.select("filter-class");
+        for (Element filterClassNameElement : filterClassNameElements) {
+            String filterClassName = filterClassNameElement.text();
+
+            Elements initElements = filterClassNameElement.parent().select("init-param");
+            if (initElements.isEmpty())
+                continue;
+
+            Map<String, String> initParams = new HashMap<>();
+
+            for (Element initElement : initElements) {
+                String name = initElement.select("param-name").get(0).text();
+                String value = initElement.select("param-value").get(0).text();
+                initParams.put(name, value);
+            }
+            filter_className_init_params.put(filterClassName, initParams);
+        }
+    }
+
 
     private void parseServletInitParams(Document document) {
         Elements servletClassNameElements = document.select("servlet-class");
@@ -203,11 +283,9 @@ public class Context {
         //这里进行了JspRuntimeContext 的初始化，
         // 就是为了能够在jsp所转换的 java 文件里的 javax.servlet.jsp.JspFactory.getDefaultFactory() 这行能够有返回值
         JspC c = new JspC();
-        if (!contextWebXmlFile.exists())
-            return;
+//        if (!contextWebXmlFile.exists())
+//            return;
         new JspRuntimeContext(servletContext, c);
-
-
     }
 
 
@@ -230,12 +308,40 @@ public class Context {
         //没有重复 就 解析
         String xml = FileUtil.readUtf8String(contextWebXmlFile);
         Document document = Jsoup.parse(xml);
+
         parseServletMapping(document);
+        parseFilterMapping(document);
 
         parseServletInitParams(document);
+        parseFilterInitParams(document);
+
+        initFilter();
 
         parseLoadOnStartup(document);
         handleLoadOnStartup();
+    }
+
+    //在init 方法中调用这两个方法
+    private void initFilter() {
+        Set<String> classNames = className_filterName.keySet();
+        for (String className : classNames) {
+            try {
+                Class clazz = this.getWebClassLoader().loadClass(className);
+                Map<String, String> initParameters = filter_className_init_params.get(className);
+                String filterName = className_filterName.get(className);
+
+                FilterConfig filterConfig = new StandardFilterConfig(servletContext, filterName, initParameters);
+                Filter filter = filterPool.get(clazz);
+
+                if (null == filter) {
+                    filter = (Filter) ReflectUtil.newInstance(clazz);
+                    filter.init(filterConfig);
+                    filterPool.put(className, filter);
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
 
