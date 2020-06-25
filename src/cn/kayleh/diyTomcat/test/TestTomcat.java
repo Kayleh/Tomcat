@@ -282,6 +282,11 @@ public class TestTomcat {
         String html = getContentString("/javaweb0/hello");
         containAssert(html,"Hello DIY Tomcat from HelloServlet@javaweb");
     }
+    @Test
+    public void testJavaweb1Hello() {
+        String html = getContentString("/javaweb1/hello");
+        containAssert(html,"Hello DIY Tomcat from HelloServlet@javaweb");
+    }
 
 
 

@@ -6,6 +6,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.kayleh.diyTomcat.util.Constant;
 import cn.kayleh.diyTomcat.util.ServerXMLUtil;
+import cn.kayleh.diyTomcat.waych.WarFileWatcher;
 
 import java.io.File;
 import java.util.HashMap;
@@ -31,6 +32,8 @@ public class Host {
         scanContextsOnWebAppsFolder();
         scanContextsInServerXML();
         scanWarOnWebAppsFolder();
+
+        new WarFileWatcher(this).start();
 
     }
 
