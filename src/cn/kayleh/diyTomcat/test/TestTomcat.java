@@ -1,6 +1,5 @@
 package cn.kayleh.diyTomcat.test;
 
-import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.IoUtil;
@@ -9,8 +8,6 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.ZipUtil;
 import cn.hutool.http.HttpUtil;
 import cn.kayleh.diyTomcat.util.MiniBrowser;
-import jdk.nashorn.internal.runtime.regexp.joni.exception.InternalException;
-import org.jsoup.internal.StringUtil;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -25,8 +22,6 @@ import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
-import static cn.kayleh.diyTomcat.util.MiniBrowser.getContentBytes;
 
 /**
  * @Author: Wizard

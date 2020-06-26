@@ -6,7 +6,6 @@ import cn.hutool.core.io.watch.WatchUtil;
 import cn.hutool.core.io.watch.Watcher;
 import cn.kayleh.diyTomcat.catalina.Host;
 import cn.kayleh.diyTomcat.util.Constant;
-import org.apache.tomcat.util.bcel.Const;
 
 import java.io.File;
 import java.nio.file.Path;

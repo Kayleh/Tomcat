@@ -1,1204 +1,637 @@
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+06 26, 2020 11:01:56 上午 cn.kayleh.diyTomcat.catalina.Context <init>
 INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 377 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 595 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
 INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 77 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 77 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 10:26:59 上午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 6 ms
-06 25, 2020 10:46:07 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@450a851d 检测到了Web应用下的重要文件变化 web.xml 
-06 25, 2020 10:46:07 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 10:46:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 10:46:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 11 ms
-06 25, 2020 10:46:07 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 10:47:42 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@69a4b8fe 检测到了Web应用下的重要文件变化 ClientJumpServlet.class 
-06 25, 2020 10:47:42 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 10:47:42 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 10:47:42 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 10 ms
-06 25, 2020 10:47:42 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 171 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 30 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 17 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 10:47:52 上午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 7 ms
-06 25, 2020 11:09:18 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@12e947e1 检测到了Web应用下的重要文件变化 web.xml 
-06 25, 2020 11:09:18 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 11:09:18 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:09:18 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
-06 25, 2020 11:09:18 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 11:09:41 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
-ERROR: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ServerJumpServlet
-java.lang.RuntimeException: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ServerJumpServlet
-	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:58)
-	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:42)
-	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ClassNotFoundException: cn.kayleh.javaweb.ServerJumpServlet
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at cn.kayleh.diyTomcat.servlets.InvokerServlet.service(InvokerServlet.java:40)
-	... 5 more
-06 25, 2020 11:09:48 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@548dda60 检测到了Web应用下的重要文件变化 ServerJumpServlet.class 
-06 25, 2020 11:09:48 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 11:09:48 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:09:48 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 5 ms
-06 25, 2020 11:09:48 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 405 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 66 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 29 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 2 ms
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 11:09:53 上午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 9 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 272 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 35 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 16 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 11:32:35 上午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 5 ms
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@4ca55233 检测到了Web应用下的重要文件变化 ServerJumpServlet.class 
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 12 ms
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@69a4b8fe 检测到了Web应用下的重要文件变化 ServerJumpServlet.class 
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 13 ms
-06 25, 2020 11:32:37 上午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 15:28:20 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 555 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 105 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 55 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 15:28:21 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 15 ms
-06 25, 2020 15:34:45 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@2dab8610 检测到了Web应用下的重要文件变化 web.xml 
-06 25, 2020 15:34:45 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 15:34:45 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 15:34:45 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 13 ms
-06 25, 2020 15:34:45 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 214 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 68 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 12 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 25 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 16:40:06 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 11 ms
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 195 ms
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 24 ms
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 16:42:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:43:46 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 205 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 26 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 4 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 26 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 16:43:47 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 7 ms
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 165 ms
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 26 ms
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 1 ms
-06 25, 2020 16:46:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 167 ms
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 28 ms
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 7 ms
-06 25, 2020 16:47:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 165 ms
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 36 ms
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 16:48:27 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 182 ms
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 23 ms
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 16:50:02 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 192 ms
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 28 ms
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 1 ms
-06 25, 2020 16:50:14 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 161 ms
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 16:56:41 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 165 ms
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 20 ms
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 1 ms
-06 25, 2020 16:58:40 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 186 ms
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 16 ms
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 17:02:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 176 ms
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 17 ms
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 17:02:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 171 ms
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 21 ms
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 4 ms
-06 25, 2020 17:08:57 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:09:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:09:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 220 ms
-06 25, 2020 17:09:09 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:09:53 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 43795 ms
-06 25, 2020 17:09:55 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:09:55 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 3 ms
-06 25, 2020 17:09:55 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:09:55 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 17:09:55 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 257 ms
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 19 ms
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 17:10:01 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 170 ms
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 17:16:23 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 166 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 31 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 25 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 0 ms
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 17:23:15 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 10 ms
-06 25, 2020 19:44:33 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 941 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 99 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 5 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 153 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 19:44:34 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 9 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 399 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 22 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 27 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 19:47:19 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 9 ms
-06 25, 2020 19:48:17 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
-ERROR: this is a deliberately created exception
-java.lang.RuntimeException: this is a deliberately created exception
-	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
-	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:53)
-	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-06 25, 2020 19:48:25 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
-ERROR: this is a deliberately created exception
-java.lang.RuntimeException: this is a deliberately created exception
-	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
-	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:53)
-	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-06 25, 2020 20:07:12 下午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
-ERROR: this is a deliberately created exception
-java.lang.RuntimeException: this is a deliberately created exception
-	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
-	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:53)
-	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@23a9254a 检测到了Web应用下的重要文件变化 HelloServlet.class 
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 26 ms
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
-INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@7f9aaf94 检测到了Web应用下的重要文件变化 HelloServlet.class 
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has started
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 16 ms
-06 25, 2020 20:10:59 下午 cn.kayleh.diyTomcat.catalina.Host reload
-INFO : Reloading Context with name [/javaee] has completed
-06 25, 2020 20:11:30 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 20:11:30 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 187 ms
-06 25, 2020 20:11:30 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 38 ms
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 0 ms
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 20:11:31 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 7 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 219 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 16 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 35 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 3 ms
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 20:20:15 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 12 ms
-06 25, 2020 20:22:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 20:22:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 351 ms
-06 25, 2020 20:22:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 20:22:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 42 ms
-06 25, 2020 20:22:47 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 8 ms
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 28 ms
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 20:22:48 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 6 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 183 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 18 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 28 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Server number:		1.0.1
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Name	:		Windows 10
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : OS Version:		10.0
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Architecture:		amd64
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : Java Home:		D:\jdk\jre
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
-INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector init
-INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 1 ms
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Connector start
-INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 20:26:00 下午 cn.kayleh.diyTomcat.catalina.Server start
-INFO : Server startup in 5 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 269 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 20 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/diyTomcat/b
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deploying web application directory d:/project/javaee/web
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory d:/project/javaee/web has finished in 27 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 60 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
 INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Context <init>
-INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 15 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 123 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 153 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 12 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 6 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 89 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : Server version:		Kayleh DiyTomcat/1.0.1
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : Server built:		2020-06-11 15:55:01
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : Server number:		1.0.1
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : OS Name	:		Windows 10
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : OS Version:		10.0
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : Architecture:		amd64
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : Java Home:		D:\jdk\jre
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : JVM Version:		1.8.0_181-b13
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server logJVM
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
 INFO : JVM Vendor:		Oracle Corporation
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector init
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector init
 INFO : Initializing ProtocolHandler [http-bio-8888]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector init
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector init
 INFO : Initializing ProtocolHandler [http-bio-7777]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector init
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector init
 INFO : Initializing ProtocolHandler [http-bio-6666]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Service init
-INFO : Initialization processed in 2 ms
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector start
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector start
 INFO : Starting ProtocolHandler [http-bio-8888]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector start
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector start
 INFO : Starting ProtocolHandler [http-bio-7777]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Connector start
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Connector start
 INFO : Starting ProtocolHandler [http-bio-6666]
-06 25, 2020 21:08:12 下午 cn.kayleh.diyTomcat.catalina.Server start
+06 26, 2020 11:01:57 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 9 ms
+06 26, 2020 11:02:11 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@379fcb18 检测到了Web应用下的重要文件变化 URLFilter.class 
+06 26, 2020 11:02:11 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:02:11 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 221 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 17 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 57 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 30 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 5 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 18 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:03:37 上午 cn.kayleh.diyTomcat.catalina.Server start
 INFO : Server startup in 10 ms
+06 26, 2020 11:04:12 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@38da025f 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:04:12 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:04:12 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:05:55 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:51)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:06:15 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:51)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:19:51 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:51)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:19:57 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:51)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 130 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 11 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 37 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 18 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 1 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 15 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 7 ms
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector error
+ERROR: Address already in use: JVM_Bind
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at cn.kayleh.diyTomcat.catalina.Connector.run(Connector.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector error
+ERROR: Address already in use: JVM_Bind
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at cn.kayleh.diyTomcat.catalina.Connector.run(Connector.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:20:16 上午 cn.kayleh.diyTomcat.catalina.Connector error
+ERROR: Address already in use: JVM_Bind
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at cn.kayleh.diyTomcat.catalina.Connector.run(Connector.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 134 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 14 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 35 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 28 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 12 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:20:29 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 7 ms
+06 26, 2020 11:20:32 上午 cn.kayleh.diyTomcat.catalina.HttpProcessor error
+ERROR: this is a deliberately created exception
+java.lang.RuntimeException: this is a deliberately created exception
+	at cn.kayleh.diyTomcat.servlets.DefaultServlet.service(DefaultServlet.java:44)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at cn.kayleh.diyTomcat.catalina.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:29)
+	at cn.kayleh.diyTomcat.catalina.HttpProcessor.execute(HttpProcessor.java:51)
+	at cn.kayleh.diyTomcat.catalina.Connector$1.run(Connector.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@61647cd6 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@e8f9779 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 17 ms
+06 26, 2020 11:20:55 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@18f8b8a9 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 11 ms
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@31ce5a20 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 8 ms
+06 26, 2020 11:21:33 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:22:06 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:22:06 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 297 ms
+06 26, 2020 11:22:06 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:22:06 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 68 ms
+06 26, 2020 11:22:06 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 98 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 41 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 6 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 17 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:22:07 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 11 ms
+06 26, 2020 11:22:18 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@47579e2f 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:22:18 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:22:18 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:22:18 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 7 ms
+06 26, 2020 11:22:18 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:22:19 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@ebfb5d2 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:22:19 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:22:19 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:22:19 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 17 ms
+06 26, 2020 11:22:19 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 132 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 15 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 41 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 31 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 3 ms
+06 26, 2020 11:24:29 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 16 ms
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:24:30 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 5 ms
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@53a5a76b 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 12 ms
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@120c0b97 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 14 ms
+06 26, 2020 11:24:39 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\a
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\a has finished in 170 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\j2ee
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\j2ee has finished in 15 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb0
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb0 has finished in 35 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\javaweb1
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\javaweb1 has finished in 24 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\project\diyTomcat\webapps\ROOT
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\project\diyTomcat\webapps\ROOT has finished in 2 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/diyTomcat/b
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/diyTomcat/b has finished in 2 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 16 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server version:		Kayleh DiyTomcat/1.0.1
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server built:		2020-06-11 15:55:01
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Server number:		1.0.1
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : Java Home:		D:\jdk\jre
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Version:		1.8.0_181-b13
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-8888]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-7777]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-6666]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-8888]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-7777]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-6666]
+06 26, 2020 11:25:00 上午 cn.kayleh.diyTomcat.catalina.Server start
+INFO : Server startup in 6 ms
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@51de1670 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 10 ms
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher$1 dealWith
+INFO : cn.kayleh.diyTomcat.watcher.ContextFileChangeWatcher@412febac 检测到了Web应用下的重要文件变化 ParamServlet.class 
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has started
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deploying web application directory d:/project/javaee/web
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Context <init>
+INFO : Deployment of web application directory d:/project/javaee/web has finished in 25 ms
+06 26, 2020 11:25:21 上午 cn.kayleh.diyTomcat.catalina.Host reload
+INFO : Reloading Context with name [/javaee] has completed
