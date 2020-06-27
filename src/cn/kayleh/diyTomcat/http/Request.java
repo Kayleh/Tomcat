@@ -31,10 +31,8 @@ public class Request extends BaseRequest {
     private String requestString;
     private String uri;
     private Socket socket;
-
     private Context context;
-//    private Service service;
-
+    //    private Service service;
     private String method;
 
     //查询字符串和参数Map
@@ -44,13 +42,9 @@ public class Request extends BaseRequest {
     private Map<String, String> headerMap;
 
     private Cookie[] cookies;
-
     private HttpSession session;
-
     private Connector connector;
-
     private boolean forwarded;
-
     private Map<String, Object> attributesMap;
 
     public Request(Socket socket, Connector connector) throws IOException {

@@ -29,7 +29,6 @@ public class Response extends BaseResponse {
     private int status;
 
     private List<Cookie> cookies;
-
     //客户端跳转
     private String redirectPath;
 

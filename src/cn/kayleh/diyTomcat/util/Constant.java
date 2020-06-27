@@ -28,15 +28,12 @@ public class Constant {
 
     public static final String response_head_302 =
             "HTTP/1.1 302 Found\r\nLocation:{}\r\n\r\n";
-
     //增加一个 404 的头信息，它会返回 404 代码已经 Not Found 字符串
     public static final String response_head_404 =
             "HTTP/1.1 404 Not Found\r\n" + "Content-Type:text/html\r\n\r\n";
     //500响应
     public static final String response_head_500 = "HTTP/1.1 500 Internal Server Error\r\n"
             + "Content-Type: text/html\r\n\r\n";
-
-
     //404页面
     public static final String textFormat_404 =
             "<html><head><title>DIY Tomcat/1.0.1 - Error report</title><style>" +

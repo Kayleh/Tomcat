@@ -160,7 +160,6 @@ public class Context {
         return filters;
     }
 
-
     //三种匹配模式
     private boolean match(String pattern, String uri) {
         //  完全匹配
@@ -179,7 +178,6 @@ public class Context {
         //其他模式先不管
         return false;
     }
-
 
     //提供 parseFilterMapping 方法，解析 web.xml 里面的 Filter 信息
     private void parseFilterMapping(Document document) {
@@ -355,7 +353,6 @@ public class Context {
         //  return;
         new JspRuntimeContext(servletContext, c);
     }
-
 
     /**
      * 初始化方法

@@ -17,23 +17,14 @@ public class Connector implements Runnable {
     int port;
     private Service service;
 
-    public Connector(Service service) {
-        this.service = service;
-    }
-
-    public Service getService() {
-        return service;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
-    }
-
     private String compression;
     private int compressionMinSize;
     private String noCompressionUserAgents;
     private String CompressableMimeType;
 
+    public Connector(Service service) {
+        this.service = service;
+    }
 
     @Override
     public void run() {
@@ -79,6 +70,14 @@ public class Connector implements Runnable {
     public void start() {
         LogFactory.get().info("Starting ProtocolHandler [http-bio-{}]", port);
         new Thread(this).start();
+    }
+
+    public Service getService() {
+        return service;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 
 

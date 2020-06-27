@@ -11,6 +11,6 @@ package cn.kayleh.diyTomcat.test;
 // 通过这种方式，无论如何大家使用的都是 rt.jar 里的 java.lang.String 类了。
 public class Kayleh {
     public void hello() {
-        System.out.println("hello, this is how2j saying \"Hello!\"");
+        System.out.println("hello, this is Kayleh saying \"Hello!\"");
     }
 }
